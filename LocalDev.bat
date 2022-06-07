@@ -1,1 +1,1 @@
-yarn docs:dev
+pnpm docs:dev

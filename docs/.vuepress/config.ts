@@ -20,7 +20,7 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "测试",
-      description: "测试",
+      description: "文档测试",
     },
     "/en/": {
       lang: "en-US",

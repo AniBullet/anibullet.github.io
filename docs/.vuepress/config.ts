@@ -29,11 +29,11 @@ export default defineUserConfig({
     },
   },
 
-  theme: defaultTheme({
-    // 主题配置
-    iconAssets: 'fontawesome',
-    docsDir: 'docs',
-  }),
+  // theme: defaultTheme({
+  //   // 主题配置
+  //   iconAssets: 'fontawesome',
+  //   docsDir: 'docs',
+  // }),
 
   shouldPrefetch: false,
 });

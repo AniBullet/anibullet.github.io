@@ -1,11 +1,3 @@
-/*
- * @Description: 
- * @Author: Bullet.S
- * @Date: 2022-06-07 19:45:50
- * @LastEditors: Bullet.S
- * @LastEditTime: 2022-06-07 21:36:06
- * @Email: animator.bullet@foxmail.com
- */
 import { defineUserConfig } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
 

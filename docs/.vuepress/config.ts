@@ -4,7 +4,7 @@ import { defaultTheme } from '@vuepress/theme-default';
 export default defineUserConfig({
   base: '/',
 
-  dest: './dist',
+  dest: 'docs/.vuepress/dist',
 
   head: [
     [
@@ -29,11 +29,11 @@ export default defineUserConfig({
     },
   },
 
-  // theme: defaultTheme({
-  //   // 主题配置
-  //   iconAssets: 'fontawesome',
-  //   docsDir: 'docs',
-  // }),
+  theme: defaultTheme({
+    // 主题配置
+    iconAssets: 'fontawesome',
+    docsDir: 'docs',
+  }),
 
   shouldPrefetch: false,
 });

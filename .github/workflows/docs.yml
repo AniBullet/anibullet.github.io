@@ -29,8 +29,6 @@ jobs:
           cache: pnpm
 
       - name: Build Docs
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm docs:build
 
       - name: Deploy to GitHub Pages

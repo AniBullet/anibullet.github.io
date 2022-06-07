@@ -1,1 +1,1 @@
-pnpm docs:build
+yarn docs:build

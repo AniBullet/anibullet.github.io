@@ -31,7 +31,7 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     // 主题配置
-    logo: "/images/docslogo.ico",
+    logo: "/images/docslcon.ico",
     iconAssets: "fontawesome",
   }),
 

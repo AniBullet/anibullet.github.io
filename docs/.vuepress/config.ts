@@ -33,7 +33,7 @@ export default defineUserConfig({
 
   theme: hopeTheme({
     // 主题配置
-    logo: "/images/DocsIcon.ico",
+    logo: "/images/DocsLogo.ico",
     iconAssets: "fontawesome",
   }),
 

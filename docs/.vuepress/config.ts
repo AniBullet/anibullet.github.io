@@ -31,7 +31,6 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     // 主题配置
-    logo: "https://cdn.jsdelivr.net/gh/AnimatorBullet/Blog-cdn@master/images/DocsIcon.ico",
     iconAssets: "fontawesome",
     docsDir: "docs",
   }),

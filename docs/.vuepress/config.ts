@@ -1,10 +1,18 @@
+/*
+ * @Description: 
+ * @Author: Bullet.S
+ * @Date: 2022-06-07 19:45:50
+ * @LastEditors: Bullet.S
+ * @LastEditTime: 2022-06-07 21:36:06
+ * @Email: animator.bullet@foxmail.com
+ */
 import { defineUserConfig } from 'vuepress';
-import { defaultTheme } from '@vuepress/theme-default';
+import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
   base: '/',
 
-  dest: './dist',
+  dest: 'docs/.vuepress/dist',
 
   head: [
     [
@@ -29,11 +37,11 @@ export default defineUserConfig({
     },
   },
 
-  // theme: defaultTheme({
-  //   // 主题配置
-  //   iconAssets: 'fontawesome',
-  //   docsDir: 'docs',
-  // }),
+  theme: hopeTheme({
+    // 主题配置
+    iconAssets: 'fontawesome',
+    docsDir: 'docs',
+  }),
 
   shouldPrefetch: false,
 });

@@ -1,1 +1,1 @@
-pnpm docs:clean-dev
+yarn docs:clean-dev

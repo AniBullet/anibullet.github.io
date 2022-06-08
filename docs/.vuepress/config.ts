@@ -1,7 +1,7 @@
 import { defineUserConfig } from 'vuepress';
 import { defaultTheme } from '@vuepress/theme-default';
 import { navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
-import { googleAnalyticsPlugin  } from '@vuepress/plugin-google-analytics'
+// import { googleAnalyticsPlugin  } from '@vuepress/plugin-google-analytics'
 import { docsearchPlugin  } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
@@ -96,9 +96,9 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    googleAnalyticsPlugin({
-      id: 'G-H4QKVC282H',
-    }),
+    // googleAnalyticsPlugin({
+    //   id: 'G-H4QKVC282H',
+    // }),
     docsearchPlugin({
       appId: '01XWVWAV2P',
       apiKey: '3fa7931b80f31ed9dd6e2b82a654ac1c',

@@ -1,6 +1,8 @@
 import { defineUserConfig } from 'vuepress';
 import { defaultTheme } from '@vuepress/theme-default';
 import { navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
+import { googleAnalyticsPlugin  } from '@vuepress/plugin-google-analytics'
+// import { docsearchPlugin  } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
   base: '/',
@@ -36,6 +38,8 @@ export default defineUserConfig({
     docsDir: 'docs',
     logo: '/favicon.ico',
     repo: 'AnimatorBullet/animatorbullet.github.io',
+    editLink: false,
+    contributors: false,
     locales: {
       '/': {
         // navbar
@@ -78,10 +82,74 @@ export default defineUserConfig({
         editLinkText: 'Edit this page on GitHub',
         lastUpdatedText: 'LastUpdated',
         contributorsText: 'Contributors',
+        tip: 'TIP',
+        warning: 'WARNING',
+        danger: 'DANGER',
+        notFound: [
+          'There is nothing here',
+          'How did we get here?',
+          'This is a 404 page',
+          'Looks like we entered the wrong link',
+        ],
       }
     },
   }),
 
-
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-H4QKVC282H',
+    }),
+    // docsearchPlugin({
+    //   appId: '34YFD9IUQ2',
+    //   apiKey: '9a9058b8655746634e01071411c366b8',
+    //   indexName: 'vuepress',
+    //   searchParameters: {
+    //     facetFilters: ['tags:v2'],
+    //   },
+    //   locales: {
+    //     '/en/': {
+    //       placeholder: 'Search',
+    //       translations: {
+    //         button: {
+    //           buttonText: 'Search',
+    //           buttonAriaLabel: 'Search',
+    //         },
+    //         modal: {
+    //           searchBox: {
+    //             resetButtonTitle: 'Clear the query',
+    //             resetButtonAriaLabel: 'Clear the query',
+    //             cancelButtonText: 'Cancel',
+    //             cancelButtonAriaLabel: 'Cancel',
+    //           },
+    //           startScreen: {
+    //             recentSearchesTitle: 'Search history',
+    //             noRecentSearchesText: 'No search history',
+    //             saveRecentSearchButtonTitle: 'Save to search history',
+    //             removeRecentSearchButtonTitle: 'Remove from search history',
+    //             favoriteSearchesTitle: 'Collect',
+    //             removeFavoriteSearchButtonTitle: 'Remove from collection',
+    //           },
+    //           errorScreen: {
+    //             titleText: 'Can not get results',
+    //             helpText: 'You may need to check your internet connection',
+    //           },
+    //           footer: {
+    //             selectText: 'Select',
+    //             navigateText: 'Toggle',
+    //             closeText: 'Close',
+    //             searchByText: 'Search by',
+    //           },
+    //           noResultsScreen: {
+    //             noResultsText: 'No results',
+    //             suggestedQueryText: 'You can try query',
+    //             reportMissingResultsText: 'Do you think this query should have results?',
+    //             reportMissingResultsLinkText: 'Click for feedback',
+    //           },
+    //         },
+    //       },
+    //     },
+    //   },
+    // }),
+  ],
 
 });

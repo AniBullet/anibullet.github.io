@@ -5,7 +5,7 @@ export const sidebarEn: SidebarConfig = {
     {
       text: 'Test',
       children: [
-        '/en/posts/1.md',
+        '/en/posts/1.html',
       ],
     },
   ],

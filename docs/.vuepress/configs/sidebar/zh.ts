@@ -5,7 +5,7 @@ export const sidebarZh: SidebarConfig = {
     {
       text: '测试',
       children: [
-        '/posts/1.md',
+        '/posts/1.html',
       ],
     },
   ],

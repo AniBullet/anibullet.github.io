@@ -1,4 +1,4 @@
-import { defineUserConfig } from 'vuepress';
+import { defineUserConfig } from '@vuepress/cli';
 import { defaultTheme } from '@vuepress/theme-default';
 import { navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
 import { googleAnalyticsPlugin  } from '@vuepress/plugin-google-analytics'

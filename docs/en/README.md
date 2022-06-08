@@ -2,7 +2,8 @@
 home: true
 title: Home
 description: Documentation website
-heroImage: /images/avatar_gif.gif
+heroImage: /images/logo-BULLETS.png
+heroImageDark: /images/logo-BULLETS-White.png
 actions:
   - text: Open Docs
     link: /posts/1.md

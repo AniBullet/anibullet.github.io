@@ -7,12 +7,9 @@ heroImageDark: /images/logo-BULLETS-White.png
 footerHtml: true
 footer: Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress v2</a>
 actions:
-  - text: 打开文档
-    link: /posts/1.md
-    type: primary
-  - text: 关于
+  - text: Link Start!
     link: /posts/
-    type: secondary
+    type: primary
 features:
   - title: 简洁至上
     details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

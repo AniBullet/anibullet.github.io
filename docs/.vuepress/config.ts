@@ -38,8 +38,8 @@ export default defineUserConfig({
     docsDir: 'docs',
     logo: '/favicon.ico',
     repo: 'AnimatorBullet/animatorbullet.github.io',
-    editLink: false,
-    contributors: false,
+    // editLink: false,
+    // contributors: false,
     locales: {
       '/': {
         // navbar

@@ -4,6 +4,8 @@ title: 首页
 description: 个人学习文档网站
 heroImage: /images/logo-BULLETS.png
 heroImageDark: /images/logo-BULLETS-White.png
+footerHtml: true
+footer: Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress v2</a>
 actions:
   - text: 打开文档
     link: /posts/1.md

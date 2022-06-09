@@ -3,6 +3,8 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
+  fullscreen: true,
+
   hostname: "https://docs.anibullet.com",
 
   author: {

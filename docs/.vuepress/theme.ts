@@ -5,7 +5,7 @@ import * as sidebar from "./sidebar";
 export default hopeTheme({
   fullscreen: true,
 
-  hostname: "https://docs.anibullet.com",
+  hostname: "https://animatorbullet.github.io",
 
   author: {
     name: "Bullet.S",

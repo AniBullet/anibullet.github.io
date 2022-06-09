@@ -1,0 +1,1 @@
+const t={key:"v-c8296fee",path:"/en/posts/",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1654671236e3,contributors:[{name:"AnimatorBullet",email:"animator.bullet@gmail.com",commits:1}]},filePathRelative:"en/posts/README.md"};export{t as data};

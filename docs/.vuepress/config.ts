@@ -37,7 +37,7 @@ export default defineUserConfig({
 
   plugins: [
     googleAnalyticsPlugin({
-      id: 'G-H4QKVC282H',
+      id: 'G-9J0H8MB39K',
     }),
     docsearchPlugin({
       appId: '4MJKI2RCHN',

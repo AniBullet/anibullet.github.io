@@ -7,7 +7,7 @@ heroImageDark: /images/logo-BULLETS-White.png
 footerHtml: true
 footer: Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress v2</a>
 actions:
-  - text: Link Start!
+  - text: Link Start !
     link: /posts/
     type: primary
 features:

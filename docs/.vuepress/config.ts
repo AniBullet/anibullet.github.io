@@ -37,7 +37,6 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     // 主题配置
-    iconAssets: 'fontawesome',
     docsDir: 'docs',
     logo: '/favicon.ico',
     repo: 'AnimatorBullet/animatorbullet.github.io',

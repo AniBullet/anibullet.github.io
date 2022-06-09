@@ -46,6 +46,6 @@ export const zh = navbar([
   {
     text: "Markdown",
     icon: "markdown",
-    link: "/markdown/",
+    link: "/guide/markdown.md",
   },
 ]);

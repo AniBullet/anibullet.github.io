@@ -46,6 +46,6 @@ export const en = navbar([
   {
     text: "Markdown",
     icon: "markdown",
-    link: "/en/markdown/",
+    link: "/en/guide/markdown.md",
   },
 ]);

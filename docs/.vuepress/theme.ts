@@ -3,8 +3,6 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  fullscreen: true,
-
   hostname: "https://animatorbullet.github.io",
 
   author: {
@@ -21,6 +19,14 @@ export default hopeTheme({
   docsDir: "docs",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+
+  fullscreen: true,
+
+  themeColor: {
+    WASURENAGUSA: "#7DB9DE",
+    MOMO: "#F596AA",
+    KUCHINASHI: "#F6C555",
+  },
 
   locales: {
     "/": {

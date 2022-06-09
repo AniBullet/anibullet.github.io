@@ -1,2 +1,2 @@
-# [docs.anibullet.com](https://docs.anibullet.com/)
-文档网站测试
+# [aniBullet Docs](https://animatorbullet.github.io)
+文档网站

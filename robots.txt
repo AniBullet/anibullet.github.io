@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://docs.anibullet.com/sitemap.xml
+Sitemap: https://animatorbullet.github.io/sitemap.xml

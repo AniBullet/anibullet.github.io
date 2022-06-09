@@ -1,1 +1,0 @@
-const t={key:"v-93a47462",path:"/en/posts/3.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1654659996e3,contributors:[{name:"AnimatorBullet",email:"animator.bullet@gmail.com",commits:1}]},filePathRelative:"en/posts/3.md"};export{t as data};

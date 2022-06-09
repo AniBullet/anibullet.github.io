@@ -1,1 +1,0 @@
-import{_ as t}from"./logo-BULLETS-White.b43bfc67.js";import{_ as o,o as _,c as r,a as e}from"./app.11c704d2.js";const s={},c=e("p",null,[e("img",{src:t,alt:"logo-BULLETS-White"})],-1),a=[c];function l(n,i){return _(),r("div",null,a)}var d=o(s,[["render",l],["__file","1.html.vue"]]);export{d as default};

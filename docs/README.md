@@ -5,7 +5,7 @@ title: 主页
 heroImage: /images/logo-BULLETS.png
 heroImageDark: /images/logo-BULLETS-White.png
 heroText: aniBullet Docs
-tagline: ✨ 工具人 & 动画师 & 技术美术 ✨
+tagline: ✨ 一些个人文档记录 ✨
 actions:
   - text: Link Start ! 💡
     link: /guide/

@@ -5,7 +5,7 @@ title: Home
 heroImage: /images/logo-BULLETS.png
 heroImageDark: /images/logo-BULLETS-White.png
 heroText: aniBullet Docs
-tagline: ✨ Animators & Technical Artists ✨
+tagline: ✨ Some personal documentation ✨
 actions:
   - text: Link Start ! 💡
     link: /en/guide/

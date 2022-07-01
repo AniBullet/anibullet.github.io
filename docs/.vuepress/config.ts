@@ -36,9 +36,9 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    googleAnalyticsPlugin({
-      id: 'G-H4QKVC282H',
-    }),
+    // googleAnalyticsPlugin({
+    //   id: 'G-H4QKVC282H',
+    // }),
     docsearchPlugin({
       appId: '4MJKI2RCHN',
       apiKey: '2f1043acaebc95abbf1b86f3007608fc',

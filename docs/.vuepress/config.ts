@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 // import { googleAnalyticsPlugin  } from '@vuepress/plugin-google-analytics'
 // import { docsearchPlugin  } from '@vuepress/plugin-docsearch'
 import theme from "./theme";
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default defineUserConfig({
   base: '/',
@@ -35,6 +36,30 @@ export default defineUserConfig({
   },
   theme,
 
+  plugins: [
+    commentPlugin({
+      /**
+       * Using Giscus
+       */
+      provider: "Giscus",
+      repo: "AnimatorBullet/Docs-Comments",
+      repoId: "R_kgDOIQEfSQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOIQEfSc4CSDnr",
+
+      /**
+       * Using twikoo
+       */
+      // provider: "Twikoo",
+      // envId: "https://twikoo.ccknbc.vercel.app",
+
+      /**
+       * Using Waline
+       */
+      // provider: "Waline",
+      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    }),
+  ],
   // plugins: [
     // googleAnalyticsPlugin({
     //   id: 'G-H4QKVC282H',

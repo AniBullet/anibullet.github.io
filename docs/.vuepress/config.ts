@@ -42,10 +42,10 @@ export default defineUserConfig({
        * Using Giscus
        */
       provider: "Giscus",
-      repo: "AnimatorBullet/Docs-Comments",
-      repoId: "R_kgDOIQEfSQ",
+      repo: "AnimatorBullet/animatorbullet.github.io",
+      repoId: "R_kgDOHcvcKQ",
       category: "Announcements",
-      categoryId: "DIC_kwDOIQEfSc4CSDnr",
+      categoryId: "DIC_kwDOHcvcKc4CSDpj",
 
       /**
        * Using twikoo

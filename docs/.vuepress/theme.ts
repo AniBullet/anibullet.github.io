@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://anibullet.com",
   },
 
-  iconAssets: "//at.alicdn.com/t/font_2410206_a0xb9hku9iu.css",
+  iconAssets: "iconfont",
 
   logo: "/logo.svg",
 

@@ -9,7 +9,7 @@
     "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
-    "vuepress-plugin-comment2": "2.0.0-beta.113",
+    "vuepress-plugin-comment2": "2.0.0-beta.113"
   },
   "dependencies": {
     "@vuepress/client": "2.0.0-beta.52",

@@ -41,11 +41,11 @@ export default defineUserConfig({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
-      repo: "AnimatorBullet/animatorbullet.github.io",
-      repoId: "R_kgDOHcvcKQ",
-      category: "Announcements",
-      categoryId: "DIC_kwDOHcvcKc4CSDpj",
+      // provider: "Giscus",
+      // repo: "AnimatorBullet/animatorbullet.github.io",
+      // repoId: "R_kgDOHcvcKQ",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOHcvcKc4CSDpj",
 
       /**
        * Using twikoo

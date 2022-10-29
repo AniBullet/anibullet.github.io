@@ -1,6 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export const zh = sidebar({
+export const zhSidebar = sidebar({
   "/": [
     "",
     // "slide",

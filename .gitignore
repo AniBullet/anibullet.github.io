@@ -14,7 +14,6 @@ pnpm-lock.yaml
 .vscode
 
 # vuepress
-docs/.vuepress/dist
 
 # 百度链接推送
 urls.txt
@@ -28,10 +27,11 @@ libs
 dist
 
 node_modules/
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
-docs/.vuepress/dist/
+docs\src/.vuepress/.cache/
+docs\src/.vuepress/.temp/
+docs\src/.vuepress/dist/
+
 node_modules/
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
-docs/.vuepress/dist/
+docs\src/.vuepress/.cache/
+docs\src/.vuepress/.temp/
+docs\src/.vuepress/dist/

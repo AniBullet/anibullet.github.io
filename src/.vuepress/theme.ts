@@ -55,7 +55,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: 'Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress</a> Theme <a href="https://vuepress-theme-hope.github.io/v2/zh/">Hope</a>',
 
       displayFooter: true,
 

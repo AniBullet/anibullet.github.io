@@ -15,7 +15,7 @@ export const zhSidebar = sidebar({
       text: "K帧工具_BsKeyTools",
       icon: "edit",
       link: "tools/bskeytools/",
-      children: ["ChainsTools"],
+      children: ["chainstools"],
     },
   ],
 });

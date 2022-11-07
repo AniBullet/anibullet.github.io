@@ -9,7 +9,7 @@ export const zhSidebar = sidebar({
       prefix: "/tools/",
       link: "/tools/",
       children: [
-        "/bskeytools/",
+        "bskeytools/",
       ],
     },
   ],

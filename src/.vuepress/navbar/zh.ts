@@ -6,14 +6,8 @@ export const zhNavbar = navbar([
   {
     text: "帮助文档",
     icon: "edit",
-    // prefix: "/posts/",
-    children: [
-      {
-        text: "BsKeyTools",
-        icon: "edit",
-        link: "bskeytools/",
-      },
-    ],
+    prefix: "/tools/",
+    children: ["bskeytools/"],
   },
   {
     text: "方法整理",
@@ -22,7 +16,7 @@ export const zhNavbar = navbar([
       {
         text: "Maxscript",
         icon: "code",
-        link: "functions/maxscript.md",
+        link: "functions/",
       },
     ],
   },

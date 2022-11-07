@@ -4,17 +4,19 @@ export const zhSidebar = sidebar({
   "/": [
     "",
     {
-      text: "K帧工具_BsKeyTools",
+      text: "工具",
       icon: "edit",
-      link: "tools/",
-      children: ["bskeytools/"],
+      prefix: "tools/",
+      children: [
+        "bskeytools/",
+      ],
     },
   ],
   "/functions/": [
     {
-      text: "Maxscript",
+      text: "方法整理",
       icon: "code",
-      children: ["maxscript.md"],
+      children: ["maxscript"],
     },
   ],
 });

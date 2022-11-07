@@ -30,10 +30,5 @@ export const zhSidebar = sidebar({
         "bskeytools/",
       ],
     },
-    {
-      text: "方法整理",
-      icon: "code",
-      children: ["maxscript"],
-    },
   ],
 });

@@ -12,13 +12,8 @@ export const zhNavbar = navbar([
   {
     text: "方法整理",
     icon: "code",
-    children: [
-      {
-        text: "Maxscript",
-        icon: "code",
-        link: "functions/",
-      },
-    ],
+    prefix: "/functions/",
+    children: ["maxscript.md"],
   },
   {
     text: "Markdown",

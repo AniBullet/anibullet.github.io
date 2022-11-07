@@ -8,5 +8,5 @@ category:
 
 ## 目录
 
-- [BsKeyTools](bskeytools\)
+- [BsKeyTools](bskeytools/)
 

@@ -1,10 +1,10 @@
 ---
-title: Maxscript Functions
+title: Fn_Maxscript
 index: false
 icon: code
 category:
   - Maxscript
-  - Fn Docs
+  - FnDocs
 tag:
   - Maxscript
   - Docs
@@ -20,7 +20,7 @@ tips: 若有更好的方法希望能不吝指教!!!
 
 > 1. 选择任意物体子级
 
-```Maxscript
+```
 mapped fn fnSelectChildrens objSel =
 (
     selectmore objSel.children
@@ -33,7 +33,7 @@ mapped fn fnSelectChildrens objSel =
 
 > 2. 选择任意物体，找到该物体最父级并选中
 
-```Maxscript
+```
 fn fnSelectAllParent =
 (
     local arrParent = #()---存每个选中物体的最父级
@@ -54,7 +54,7 @@ fn fnSelectAllParent =
 
 > 3. 去除 String 末尾的记数
 
-```Maxscript
+```
 fn fnRemoveCount str =
 (
     str = trimRight str "_1234567890"

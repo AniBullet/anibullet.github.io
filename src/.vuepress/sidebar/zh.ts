@@ -4,11 +4,12 @@ export const zhSidebar = sidebar({
   "/": [
     "",
     {
-      text: "工具",
+      text: "工具文档",
       icon: "edit",
-      prefix: "tools/",
+      prefix: "/tools/",
+      link: "/tools/",
       children: [
-        "bskeytools/",
+        "/bskeytools/",
       ],
     },
   ],

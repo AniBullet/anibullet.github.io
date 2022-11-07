@@ -1,7 +1,7 @@
 ---
 title: 工具文档
 index: false
-icon: code
+icon: edit
 category:
   - Tools
 ---

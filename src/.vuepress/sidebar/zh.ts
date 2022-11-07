@@ -20,4 +20,20 @@ export const zhSidebar = sidebar({
       children: ["maxscript"],
     },
   ],
+  "/guide/": [
+    {
+      text: "工具文档",
+      icon: "edit",
+      prefix: "/tools/",
+      link: "/tools/",
+      children: [
+        "bskeytools/",
+      ],
+    },
+    {
+      text: "方法整理",
+      icon: "code",
+      children: ["maxscript"],
+    },
+  ],
 });

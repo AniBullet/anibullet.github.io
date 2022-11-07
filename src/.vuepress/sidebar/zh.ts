@@ -21,6 +21,7 @@ export const zhSidebar = sidebar({
     },
   ],
   "/guide/": [
+    "",
     {
       text: "工具文档",
       icon: "edit",

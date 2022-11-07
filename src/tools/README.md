@@ -1,11 +1,12 @@
 ---
-title: 常用方法个人整理
+title: 工具文档
 index: false
 icon: code
 category:
-  - Maxscript
+  - Tools
 ---
 
 ## 目录
 
-- [BsKeyTools](BsKeyTools\)
+- [BsKeyTools](bskeytools\)
+

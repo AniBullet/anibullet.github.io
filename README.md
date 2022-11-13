@@ -1,2 +1,2 @@
-# [aniBullet Docs](https://animatorbullet.github.io)
+# [aniBullet Docs](https://anibullet.github.io)
 文档网站

@@ -28,7 +28,7 @@ export default defineUserConfig({
        * Using Giscus
        */
       provider: "Giscus",
-      repo: "AnimatorBullet/animatorbullet.github.io",
+      repo: "AniBullet/anibullet.github.io",
       repoId: "R_kgDOHcvcKQ",
       category: "Announcements",
       categoryId: "DIC_kwDOHcvcKc4CSDpj",

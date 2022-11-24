@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://animatorbullet.github.io",
+  hostname: "https://anibullet.github.io",
 
   author: {
     name: "Bullet.S",
@@ -16,7 +16,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "AnimatorBullet/animatorbullet.github.io",
+  repo: "AniBullet/anibullet.github.io",
 
   docsDir: "/src",
 
@@ -85,7 +85,7 @@ export default hopeTheme({
     //   //  * Using Giscus
     //   //  */
     //   provider: "Giscus",
-    //   repo: "AnimatorBullet/animatorbullet.github.io",
+    //   repo: "AniBullet/anibullet.github.io",
     //   repoId: "R_kgDOHcvcKQ",
     //   category: "Announcements",
     //   categoryId: "DIC_kwDOHcvcKc4CSDpj",

@@ -1,4 +1,4 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as n,c as i,f as l}from"./app.42d81bd4.js";const r={},a=l(`<h1 id="常用-fn-个人整理与分享" tabindex="-1"><a class="header-anchor" href="#常用-fn-个人整理与分享" aria-hidden="true">#</a> 常用 FN 个人整理与分享</h1><hr><p>tips: 若有更好的方法希望能不吝指教!!!</p><blockquote><ol><li>选择任意物体子级</li></ol></blockquote><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>mapped fn fnSelectChildrens objSel =
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as n,c as i,f as l}from"./app.aa549038.js";const r={},a=l(`<h1 id="常用-fn-个人整理与分享" tabindex="-1"><a class="header-anchor" href="#常用-fn-个人整理与分享" aria-hidden="true">#</a> 常用 FN 个人整理与分享</h1><hr><p>tips: 若有更好的方法希望能不吝指教!!!</p><blockquote><ol><li>选择任意物体子级</li></ol></blockquote><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>mapped fn fnSelectChildrens objSel =
 (
     selectmore objSel.children
     for i in objSel.children do (fnSelectChildrens i)

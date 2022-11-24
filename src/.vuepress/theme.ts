@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://anibullet.com",
   },
 
-  darkmode: "auto",
+  darkmode: "switch",
 
   iconAssets: "iconfont",
 

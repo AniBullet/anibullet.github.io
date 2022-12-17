@@ -7,11 +7,11 @@ heroImageDark: /images/logo-BULLETS-White.png
 heroText: aniBullet Docs
 tagline: ✨ 一些个人文档记录 ✨
 actions:
-  - text: Link Start ! 💡
+  - text: Link Star——t
     link: /guide/
     type: primary
 
-  - text: 关于 🏠
+  - text: 关于
     link: /intro.md
 
 features:

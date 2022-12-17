@@ -8,4 +8,4 @@ category:
 
 ## 目录
 
-- [Maxscript](Maxscript.md)
+- [Maxscript](maxscript.md)

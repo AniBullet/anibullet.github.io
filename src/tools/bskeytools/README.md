@@ -8,4 +8,4 @@ category:
 
 ## 目录
 
-- [ChainsTools](/tools/bskeytools/chainstools.md)
+- [ChainsTools](chainstools.md)

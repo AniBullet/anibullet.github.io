@@ -1,0 +1,79 @@
+---
+title: 常见问题
+index: false
+icon: ask
+category:
+  - 使用指南
+---
+
+## 常见问题
+
+### 1. 为什么安装后打开工具，看不到面板也没有报错？
+
+::: tip 
+
+首先确认重启了Max，或者你知道该怎么运行该工具脚本ms
+
+重启Max后还没有，可能是多屏导致界面位置在屏幕外，
+
+（0.9.6版本后做了初次打开位置保护）
+
+可在菜单栏点击    ``工具窗口  位置重置``
+
+![img01](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/20221218033444.png)
+
+:::
+
+### 2. 为什么这个卸载以后每次打开还是会有啊？
+
+::: tip 
+
+可能是卸载不干净，请手动删除3dsMax 安装根目录下的：
+
+``*/Scripts/BulletScripts`` 文件夹
+
+``*/Scripts/Startup/BulletKeyTools.ms`` 文件
+
+``*/UI_ln\Icons\cstoolIcons`` 文件夹
+
+:::
+
+### 3.  怎么删除(备份)配置文件？
+
+::: tip
+
+右键工具面板或者点击设置，点击打开“配置文件"目录，``BulletConfig.ini`` 即配置文件
+
+或者直接打开路径：``C:\Users\{用户名}\AppData\Local\Autodesk\3dsMax\{max版本号}\ENU{语言}\``
+
+:::
+
+### 4. 为什么切换语言版本后脚本设置没了
+
+::: tip
+
+因为配置文件放在跟语言版本相关的目录，
+
+为啥不放通用地方呢，~~因为权限原因无奈之举...~~ 分开配置更灵活~
+
+可以复制对应语言版本下配置文件到新的目录：
+
+``C:\Users\{用户名}\AppData\Local\Autodesk\3dsMax\{max版本号}\ENU{语言}\BulletConfig.ini``
+
+当然，我觉得还不如重新点几下快= =
+
+:::
+
+### 5. 运行报错 ``dotNet runtime exception ...... gitee.com``
+
+::: tip
+
+可能因为网络原因，无法检测最新版本，
+
+工具使用无影响，可在设置中关闭检查更新，离线使用。
+
+当然还是建议自动检测更新，因为真的很方便~
+
+可以尝试检查网络 ( 看能否登陆码云 [gitee.com](http://gitee.com) ) 或者重装插件。
+
+:::

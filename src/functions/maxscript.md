@@ -10,15 +10,15 @@ tag:
   - Docs
 ---
 
-# 常用 FN 个人整理与分享
+## 常用 FN 个人整理与分享
 
-------
+::: tip *
 
-tips: 若有更好的方法希望能不吝指教!!!
+若有更好的方法希望能不吝指教!!! 
 
+:::
 
-
-> 1. 选择任意物体子级
+### 1. 选择任意物体子级
 
 ```
 mapped fn fnSelectChildrens objSel =
@@ -31,7 +31,7 @@ mapped fn fnSelectChildrens objSel =
 
 
 
-> 2. 选择任意物体，找到该物体最父级并选中
+### 2. 找到所选物体最父级并选中
 
 ```
 fn fnSelectAllParent =
@@ -52,7 +52,7 @@ fn fnSelectAllParent =
 
 
 
-> 3. 去除 String 末尾的记数
+### 3. 去除 String 末尾的记数
 
 ```
 fn fnRemoveCount str =

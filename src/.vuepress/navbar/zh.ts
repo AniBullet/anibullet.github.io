@@ -4,13 +4,23 @@ export const zhNavbar = navbar([
   "/",
   // { text: "使用指南", icon: "creative", link: "/guide/" },
   {
-    text: "帮助文档",
+    text: "下载安装",
+    icon: "creative",
+    link: "/guide/",
+  },
+  {
+    text: "常见问题",
+    icon: "ask",
+    link: "/faq.md",
+  },
+  {
+    text: "文档",
     icon: "edit",
     prefix: "/tools/",
     children: ["bskeytools/"],
   },
   {
-    text: "方法整理",
+    text: "Fn",
     icon: "code",
     prefix: "/functions/",
     children: ["maxscript.md"],

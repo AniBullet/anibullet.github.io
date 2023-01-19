@@ -14,7 +14,7 @@ category:
 
 ::: info 下载地址
 
-更新历史：[v0.9.9.5](https://www.notion.so/bullet4869/4e28c488d5474a9082e164b7c5b6926c)
+更新历史：[v0.9.9.6](https://www.notion.so/bullet4869/4e28c488d5474a9082e164b7c5b6926c)
 
 [GitHub](https://github.com/AniBullet/BsKeyTools)：[![BsKeyTools](https://img.shields.io/badge/BsKeyTools-LatestReleases-success?style=flat-square&logo=github)](https://github.com/AniBullet/BsKeyTools/releases/latest)
 
@@ -23,6 +23,10 @@ category:
 [阿里云    提取码：50gt](https://www.aliyundrive.com/s/STcyfEKHso5)  
 
 [百度云    提取码：2333](https://pan.baidu.com/s/1AJShLx7pKXV5Us5rlZY27A)  
+
+![image](https://cdn.jsdelivr.net/gh/AnimatorBullet/Blog-cdn@master/images/dl.png)  
+
+B 站视频教程：[点击跳转](https://space.bilibili.com/2031113/channel/collectiondetail?sid=560782)
 
 :::
 

@@ -8,4 +8,6 @@ category:
 
 ## 目录
 
+B 站视频教程：[点击跳转](https://space.bilibili.com/2031113/channel/collectiondetail?sid=560782)
+
 - [ChainsTools](chainstools.md)

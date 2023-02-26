@@ -47,12 +47,9 @@ export default defineUserConfig({
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     }),
     docsearchPlugin({
-      appId: '4MJKI2RCHN',
-      apiKey: '2f1043acaebc95abbf1b86f3007608fc',
-      indexName: 'vuepress',
-      searchParameters: {
-        facetFilters: ['tags:v2'],
-      },
+      appId: '4LHCI3MQ18',
+      apiKey: '6637c1a28faaeb61ab77d63cb1cfd01a',
+      indexName: 'anibulletio',
       locales: {
         '/': {
           placeholder: '搜索',

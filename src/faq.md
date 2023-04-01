@@ -54,7 +54,7 @@ category:
 
 可能因为杀毒工具禁用了回调，如max杀毒卫士，请点开主面板右下方“插件管理”，并按下图操作:
 ![img02](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled.png)
-![img03](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled%20(1).png)
+![img03](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled_1.png)
 
 :::
 

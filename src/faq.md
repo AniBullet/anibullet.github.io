@@ -10,7 +10,7 @@ category:
 
 ### 1. 为什么安装后打开工具，看不到面板也没有报错？
 
-::: tip 
+::: tip
 
 首先确认重启了Max，或者你知道该怎么运行该工具脚本ms
 
@@ -26,7 +26,7 @@ category:
 
 ### 2. 为什么这个卸载以后每次打开还是会有啊？
 
-::: tip 
+::: tip
 
 可能是卸载不干净，请手动删除3dsMax 安装根目录下的：
 
@@ -50,7 +50,7 @@ category:
 
 ### 4. 为什么帧栏范围不实时改变？
 
-:::
+::: tip
 
 可能因为杀毒工具禁用了回调，如max杀毒卫士，请点开主面板右下方“插件管理”，并按下图操作:
 ![img02](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled.png)

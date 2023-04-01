@@ -48,7 +48,17 @@ category:
 
 :::
 
-### 4. 为什么切换语言版本后脚本设置没了
+### 4. 为什么帧栏范围不实时改变？
+
+:::
+
+可能因为杀毒工具禁用了回调，如max杀毒卫士，请点开主面板右下方“插件管理”，并按下图操作:
+![img02](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled.png)
+![img03](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled%20(1).png)
+
+:::
+
+### 5. 为什么切换语言版本后脚本设置没了
 
 ::: tip
 
@@ -64,7 +74,7 @@ category:
 
 :::
 
-### 5. 运行报错 ``dotNet runtime exception ...... gitee.com``
+### 6. 运行报错 ``dotNet runtime exception ...... gitee.com``
 
 ::: tip
 

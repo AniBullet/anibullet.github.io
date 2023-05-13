@@ -87,3 +87,20 @@ category:
 可以尝试检查网络 ( 看能否登陆码云 [gitee.com](http://gitee.com) ) 或者重装插件。
 
 :::
+
+### 7. 可能打开工具失败，弹出 Max 安全工具的报错 (如不是请忽略这条)
+
+::: tip
+
+因为高版本3dsmax自带的安全工具会阻隔dotnet接口，直接禁了 System.IO.File，所以工具打开失败，建议关闭自带安全工具，或者取消拦截dotnet接口。（本工具自带杀毒功能）  
+![img04](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-46-04.png)  
+
+
+![img05](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-20.png)
+![img06](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-44.png)  
+
+建议:  
+1. 关闭对 dotnet 接口的阻拦  
+2. 重启 3dsmax  
+
+:::

@@ -44,7 +44,7 @@ category:
 
 右键工具面板或者点击设置，点击打开“配置文件"目录，``BulletConfig.ini`` 即配置文件
 
-或者直接打开路径：``C:\Users\{用户名}\AppData\Local\Autodesk\3dsMax\{max版本号}\ENU{语言}\``
+或者直接打开路径：``%localappdata%\Autodesk\3dsMax\{max版本号}\ENU{语言}\``
 
 :::
 
@@ -68,7 +68,7 @@ category:
 
 可以复制对应语言版本下配置文件到新的目录：
 
-``C:\Users\{用户名}\AppData\Local\Autodesk\3dsMax\{max版本号}\ENU{语言}\BulletConfig.ini``
+``%localappdata%\Autodesk\3dsMax\{max版本号}\ENU{语言}\BulletConfig.ini``
 
 当然，我觉得还不如重新点几下快= =
 
@@ -95,12 +95,29 @@ category:
 因为高版本3dsmax自带的安全工具会阻隔dotnet接口，直接禁了 System.IO.File，所以工具打开失败，建议关闭自带安全工具，或者取消拦截dotnet接口。（本工具自带杀毒功能）  
 ![img04](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-46-04.png)  
 
-
 ![img05](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-20.png)
 ![img06](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-44.png)  
 
 建议:  
 1. 关闭对 dotnet 接口的阻拦  
 2. 重启 3dsmax  
+
+:::
+
+### 8. 打开工具报错，并且没有显示工具主界面
+
+::: tip 
+
+![img07](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-06-08_03-44-30.png)
+
+
+
+可尝试暂时移除配置文件:  
+1. 首先关闭所有 3dsMax
+2. 资源管理器粘贴下面路径, ``%localappdata%\Autodesk\3dsMax\2014 - 64bit\ENU`` 找到 BulletConfig.ini
+3. 移动到其他文件夹，方便恢复部分设置
+4. 重启 3dsMax，打开插件
+
+ps：0.9.9.7 之后版本添加了报错提示出错脚本名，略微方便定位问题
 
 :::

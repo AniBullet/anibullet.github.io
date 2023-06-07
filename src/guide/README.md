@@ -14,7 +14,7 @@ category:
 
 ::: info 下载地址
 
-更新历史：[v0.9.9.6](https://www.notion.so/bullet4869/4e28c488d5474a9082e164b7c5b6926c)
+更新历史：[![更新历史](https://img.shields.io/github/v/release/AniBullet/BsKeyTools?display_name=tag&include_prereleases&sort=semver)](https://www.notion.so/bullet4869/4e28c488d5474a9082e164b7c5b6926c)
 
 [GitHub](https://github.com/AniBullet/BsKeyTools)：[![BsKeyTools](https://img.shields.io/badge/BsKeyTools-LatestReleases-success?style=flat-square&logo=github)](https://github.com/AniBullet/BsKeyTools/releases/latest)
 

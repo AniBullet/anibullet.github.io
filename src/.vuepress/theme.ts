@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://anibullet.github.io",
@@ -10,145 +11,212 @@ export default hopeTheme({
     url: "https://anibullet.com",
   },
 
-  // darkmode: "switch",
-
-  iconAssets: "iconfont",
-
   logo: "/logo.svg",
 
   repo: "AniBullet/anibullet.github.io",
 
-  docsDir: "/src",
+  docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
-  // fullscreen: true,
+  // 导航栏
+  navbar,
 
-  // themeColor: {
-  //   WASURENAGUSA: "#7DB9DE",
-  //   MOMO: "#F596AA",
-  //   KUCHINASHI: "#F6C555",
+  // 侧边栏
+  sidebar,
+
+  // 页脚
+  footer: 'Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress</a> Theme <a href="https://theme-hope.vuejs.press/">Hope</a>',
+  displayFooter: true,
+
+  copyright: false,
+
+  // 加密配置
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": {
+  //       hint: "Password: 1234",
+  //       password: "1234",
+  //     },
+  //   },
   // },
 
-  locales: {
-    // "/en/": {
-    //   // navbar
-    //   navbar: enNavbar,
+  // 多语言配置
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
+  },
 
-    //   // sidebar
-    //   sidebar: enSidebar,
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // hotReload: true,
 
-    //   footer: 'Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress</a> Theme <a href="https://vuepress-theme-hope.github.io/v2/zh/">Hope</a>',
+  // 此处开启了很多功能用于演示，你应仅保留用到的功能。
+  markdown: {
+    align: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    figure: true,
+    gfm: true,
+    imgLazyload: true,
+    imgSize: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    vPre: true,
 
-    //   displayFooter: true,
-
-    //   // metaLocales: {
-    //   //   editLink: "Edit this page on GitHub",
-    //   // },
+    // 取消注释它们如果你需要 TeX 支持
+    // markdownMath: {
+    //   // 启用前安装 katex
+    //   type: "katex",
+    //   // 或者安装 mathjax-full
+    //   type: "mathjax",
     // },
 
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: 'Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress</a> Theme <a href="https://vuepress-theme-hope.github.io/v2/zh/">Hope</a>',
-
-      displayFooter: true,
-
-      // page meta
-      // metaLocales: {
-      //   editLink: "在 GitHub 上编辑此页",
-      // },
-
-      copyright: false,
+    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
+    revealjs: {
+      plugins: ["highlight", "math", "search", "notes", "zoom"],
     },
+
+    // 在启用之前安装 chart.js
+    // chartjs: true,
+
+    // insert component easily
+
+    // 在启用之前安装 echarts
+    // echarts: true,
+
+    // 在启用之前安装 flowchart.ts
+    // flowchart: true,
+
+    // 在启用之前安装 mermaid
+    // mermaid: true,
+
+    // playground: {
+    //   presets: ["ts", "vue"],
+    // },
+
+    // 在启用之前安装 @vue/repl
+    // vuePlayground: true,
+
+    // 在启用之前安装 sandpack-vue3
+    // sandpack: true,
   },
 
-  encrypt: {
-    config: {
-      "/guide/encrypt.html": ["4869"],
-    },
-  },
-
+  // 在这里配置主题提供的插件
   plugins: {
-    // If you don't need comment feature, you can remove following option
-    // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
-    // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
+    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     // comment: {
-    //   // /**
-    //   //  * Using Giscus
-    //   //  */
     //   provider: "Giscus",
-    //   repo: "AniBullet/anibullet.github.io",
-    //   repoId: "R_kgDOHcvcKQ",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
     //   category: "Announcements",
-    //   categoryId: "DIC_kwDOHcvcKc4CSDpj",
-
-    //   /**
-    //    * Using Twikoo
-    //    */
-    //   // provider: "Twikoo",
-    //   // envId: "https://twikoo.ccknbc.vercel.app",
-
-    //   /**
-    //    * Using Waline
-    //    */
-    //   // provider: "Waline",
-    //   // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
     // },
 
-    // Disable features you don't want here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      chart: true,
-      codetabs: true,
-      container: true,
-      demo: true,
-      echarts: true,
-      flowchart: true,
-      gfm: true,
-      imageLazyload: true,
-      imageSize: true,
-      include: true,
-      katex: true,
-      mark: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
-      stylize: [
-        {
-          matcher: "Recommanded",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommanded",
-              };
+    comment: {
+      /**
+       * Using Giscus
+       */
+      provider: "Giscus",
+      repo: "AniBullet/anibullet.github.io",
+      repoId: "R_kgDOHcvcKQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOHcvcKc4CSDpj",
+
+      /**
+       * Using twikoo
+       */
+      // provider: "Twikoo",
+      // envId: "https://twikoo.ccknbc.vercel.app",
+
+      /**
+       * Using Waline
+       */
+      // provider: "Waline",
+      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    },
+
+    docsearch: {
+      appId: '4LHCI3MQ18',
+      apiKey: '6637c1a28faaeb61ab77d63cb1cfd01a',
+      indexName: 'anibulletio',
+      locales: {
+        '/': {
+          placeholder: '搜索',
+          translations: {
+            button: {
+              buttonText: '搜索',
+              buttonAriaLabel: '搜索',
+            },
+            modal: {
+              searchBox: {
+                resetButtonTitle: '清除查询条件',
+                resetButtonAriaLabel: '清除查询条件',
+                cancelButtonText: '取消',
+                cancelButtonAriaLabel: '取消',
+              },
+              startScreen: {
+                recentSearchesTitle: '搜索历史',
+                noRecentSearchesText: '没有搜索历史',
+                saveRecentSearchButtonTitle: '保存至搜索历史',
+                removeRecentSearchButtonTitle: '从搜索历史中移除',
+                favoriteSearchesTitle: '收藏',
+                removeFavoriteSearchButtonTitle: '从收藏中移除',
+              },
+              errorScreen: {
+                titleText: '无法获取结果',
+                helpText: '你可能需要检查你的网络连接',
+              },
+              footer: {
+                selectText: '选择',
+                navigateText: '切换',
+                closeText: '关闭',
+                searchByText: '搜索提供者',
+              },
+              noResultsScreen: {
+                noResultsText: '无法找到相关结果',
+                suggestedQueryText: '你可以尝试查询',
+                reportMissingResultsText: '你认为该查询应该有结果？',
+                reportMissingResultsLinkText: '点击反馈',
+              },
+            },
           },
         },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      vuePlayground: true,
+      },
     },
 
+    components: {
+      components: ["Badge", "VPCard"],
+    },
+
+    icon: {
+      prefix: "/logo.png",
+    },
+
+    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
-      cachePic: true,
+      cacheImage: true,
       appendBase: true,
       apple: {
         icon: "/logo.png",
@@ -193,12 +261,6 @@ export default hopeTheme({
                 src: "/logo.png",
                 sizes: "192x192",
                 purpose: "maskable",
-                type: "image/png",
-              },
-              {
-                src: "/logo.png",
-                sizes: "192x192",
-                purpose: "monochrome",
                 type: "image/png",
               },
             ],

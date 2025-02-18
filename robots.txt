@@ -1,5 +1,2 @@
-
-User-agent:*
-Disallow:
-
+# Algolia-Crawler-Verif: C5E49F65F729D4C4
 Sitemap: https://anibullet.github.io/sitemap.xml

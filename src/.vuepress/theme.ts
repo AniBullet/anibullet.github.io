@@ -157,7 +157,7 @@ export default hopeTheme({
 
     docsearch: {
       appId: 'YWKX4THIK4',
-      apiKey: '3481523954d5218ec3da52bc4ac19c2a',
+      apiKey: '9c1e476f9456f16383975eff8d2b4d67',
       indexName: 'anibulletio',
       locales: {
         '/': {

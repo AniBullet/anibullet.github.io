@@ -45,3 +45,8 @@ jobs:
         with:
           branch: gh-pages
           folder: src/.vuepress/dist
+
+        - name: 清理旧文件
+        run: |
+          pnpm store prune
+          rm -rf node_modules/.cache

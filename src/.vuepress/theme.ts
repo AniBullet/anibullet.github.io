@@ -158,7 +158,7 @@ export default hopeTheme({
     docsearch: {
       appId: 'YWKX4THIK4',
       apiKey: '9c1e476f9456f16383975eff8d2b4d67',
-      indexName: 'anibulletio',
+      indexName: 'anibullet_github_io_ywkx4thik4_pages',
       locales: {
         '/': {
           placeholder: '搜索',

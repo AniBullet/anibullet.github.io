@@ -1,3 +1,4 @@
+
 name: 部署文档
 
 on:
@@ -22,11 +23,12 @@ jobs:
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
 
+
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm # 自动缓存 pnpm 依赖
+          cache: pnpm
 
       - name: 安装依赖
         run: |
@@ -43,10 +45,6 @@ jobs:
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          # 部署文档
           branch: gh-pages
           folder: src/.vuepress/dist
-
-        - name: 清理旧文件
-        run: |
-          pnpm store prune
-          rm -rf node_modules/.cache

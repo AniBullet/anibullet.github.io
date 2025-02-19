@@ -20,9 +20,11 @@ category:
 
 [蓝奏云    密码：2333](https://anibullet.lanzoue.com/b07cmnqta)  
 
-[阿里云    提取码：50gt](https://www.aliyundrive.com/s/STcyfEKHso5)  
+[阿里云](https://www.alipan.com/s/tFUkG2D9Z9J)  
 
-[百度云    提取码：2333](https://pan.baidu.com/s/1AJShLx7pKXV5Us5rlZY27A)  
+[夸克云    密码：x8Ee](https://pan.quark.cn/s/4a0d183b53c5)  
+
+[百度云    提取码：2333](https://pan.baidu.com/s/1WZLgXLid_ga9N-RNPI4N4Q?pwd=2333)  
 
 ![image](https://cdn.jsdelivr.net/gh/AnimatorBullet/Blog-cdn@master/images/dl.png)  
 

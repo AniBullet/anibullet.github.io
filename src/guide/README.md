@@ -28,7 +28,7 @@ category:
 
 ![image](https://cdn.jsdelivr.net/gh/AnimatorBullet/Blog-cdn@master/images/dl.png)  
 
-B 站视频教程：[点击跳转](https://space.bilibili.com/2031113/channel/collectiondetail?sid=560782)
+B 站视频教程：[点击跳转](https://space.bilibili.com/2031113/lists/560782)
 
 :::
 

@@ -20,7 +20,7 @@ category:
 
 [蓝奏云    密码：2333](https://anibullet.lanzoue.com/b07cmnqta)  
 
-[阿里云](https://www.alipan.com/s/tFUkG2D9Z9J)  
+[阿里云    点击跳转](https://www.alipan.com/s/tFUkG2D9Z9J)  
 
 [夸克云    密码：x8Ee](https://pan.quark.cn/s/4a0d183b53c5)  
 

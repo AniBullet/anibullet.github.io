@@ -1,6 +1,6 @@
 ---
 title: 独立插件
-icon: puzzle-piece
+icon: plugin
 order: 20
 category:
   - BsKeyTools

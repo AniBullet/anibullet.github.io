@@ -1,6 +1,6 @@
 ---
 title: 安装指南
-icon: download
+icon: install
 order: 2
 category:
   - BsKeyTools

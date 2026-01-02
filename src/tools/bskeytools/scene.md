@@ -1,6 +1,6 @@
 ---
 title: 场景管理工具
-icon: folder-open
+icon: folder
 order: 13
 category:
   - BsKeyTools

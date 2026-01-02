@@ -1,5 +1,5 @@
 ---
-title: 视口与显示工具
+title: 视口显示工具
 icon: eye
 order: 14
 category:

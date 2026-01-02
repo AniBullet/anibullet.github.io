@@ -1,6 +1,6 @@
 ---
 title: 动画重定向
-icon: right-left
+icon: change
 order: 15
 category:
   - BsKeyTools

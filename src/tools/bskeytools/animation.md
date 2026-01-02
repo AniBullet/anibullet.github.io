@@ -1,6 +1,6 @@
 ---
 title: 动画工具
-icon: film
+icon: animation
 order: 10
 category:
   - BsKeyTools

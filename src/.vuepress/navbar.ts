@@ -2,28 +2,66 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  // { text: "使用指南", icon: "creative", link: "/guide/" },
   {
     text: "下载安装",
-    icon: "creative",
+    icon: "install",
     link: "/guide/",
   },
   {
     text: "常见问题",
     icon: "ask",
-    link: "/faq.md",
+    link: "/faq",
   },
   {
-    text: "文档",
-    icon: "edit",
-    prefix: "/tools/",
-    children: ["bskeytools/"],
+    text: "BsKeyTools",
+    icon: "tool",
+    prefix: "/tools/bskeytools/",
+    children: [
+      {
+        text: "工具首页",
+        icon: "home",
+        link: "",
+      },
+      {
+        text: "快速入门",
+        icon: "launch",
+        link: "quickstart",
+      },
+      {
+        text: "功能总览",
+        icon: "list",
+        link: "features",
+      },
+      {
+        text: "动画工具",
+        icon: "animation",
+        link: "animation",
+      },
+      {
+        text: "骨骼绑定",
+        icon: "tree",
+        link: "rigging",
+      },
+      {
+        text: "蒙皮权重",
+        icon: "palette",
+        link: "skinning",
+      },
+      {
+        text: "场景管理",
+        icon: "folder",
+        link: "scene",
+      },
+      {
+        text: "独立插件",
+        icon: "plugin",
+        link: "plugins",
+      },
+    ],
   },
   {
-    text: "Fn",
-    icon: "code",
-    prefix: "/functions/",
-    children: ["maxscript.md"],
-  }
+    text: "关于",
+    icon: "info",
+    link: "/intro",
+  },
 ]);
-

@@ -1,6 +1,6 @@
 ---
 title: 功能总览
-icon: list-check
+icon: list
 order: 3
 category:
   - BsKeyTools

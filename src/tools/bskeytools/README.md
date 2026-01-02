@@ -1,7 +1,7 @@
 ---
 title: BsKeyTools
 index: false
-icon: wand-magic-sparkles
+icon: tool
 category:
   - BsKeyTools
 ---

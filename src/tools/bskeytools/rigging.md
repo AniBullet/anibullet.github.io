@@ -1,6 +1,6 @@
 ---
 title: 骨骼绑定工具
-icon: bone
+icon: tree
 order: 11
 category:
   - BsKeyTools

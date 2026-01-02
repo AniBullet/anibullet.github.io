@@ -1,6 +1,6 @@
 ---
 title: 蒙皮权重工具
-icon: paintbrush
+icon: palette
 order: 12
 category:
   - BsKeyTools

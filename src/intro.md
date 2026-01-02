@@ -1,20 +1,68 @@
 ---
+title: 关于
 icon: info
 ---
 
-# 个人简介
+# 关于 Bullet.S
 
-``` ✨ Animator & Technical Artist ✨ ```  
+**Animator & Technical Artist**
 
-``` ✨ TECH OTAKUS SAVE THE WORLD ✨ ```  
+---
 
+## 👤 简介
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anibullet&layout=compact&theme=github_dark&hide_title=true)](https://github.com/AniBullet?tab=repositories)
+游戏动画师，业余开发 3ds Max 动画工具。
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anibullet&repo=BsKeyTools&show_owner=true&theme=github_dark)](https://github.com/AniBullet/BsKeyTools)
+**BsKeyTools** 从 2019 年开始开发，旨在提高动画师工作效率。
 
-[![AniBullet's GitHub stats](https://github-readme-stats.vercel.app/api?username=anibullet&show_icons=true&theme=github_dark&hide_title=true)](https://github.com/AniBullet?tab=repositories)
+---
 
-## Link Start
-[![Q群](https://img.shields.io/badge/QGroup-993590655-red?style=flat-square&logo=Tencent-QQ)](https://jq.qq.com/?_wv=1027&k=hmeHhTwu)&ensp;[![公众号](https://img.shields.io/badge/WeChat-@aniBullet-success?style=flat-square&logo=wechat)](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/WeChatCode.gif)&ensp;[![Bilibili](https://img.shields.io/badge/Bilibili-2031113-success?style=flat-square&logo=bilibili)](https://space.bilibili.com/2031113)
-[![GitHub followers](https://img.shields.io/github/followers/AniBullet?label=%E5%85%B3%E6%B3%A8&style=social)](https://github.com/AniBullet)&ensp;[![Twitter](https://img.shields.io/twitter/follow/aniBulletCom?label=BulletS&style=social)](https://twitter.com/aniBulletCom)
+## 🛠️ 项目
+
+**BsKeyTools** - 专为 3ds Max 动画师打造的综合工具集
+
+- GitHub: https://github.com/AniBullet/BsKeyTools
+- 100+ 实用工具
+- 支持 3ds Max 2014-2026
+- 开源免费
+
+---
+
+## 🔗 联系方式
+
+| 平台 | 链接 |
+|:-----|:-----|
+| GitHub | https://github.com/AniBullet |
+| Bilibili | https://space.bilibili.com/2031113 |
+| 个人主页 | https://www.anibullet.com |
+| 所有链接 | https://bio.site/aniBullet |
+
+---
+
+## 💬 交流群
+
+| 群名 | 群号 |
+|:-----|:-----|
+| 交流群 1 | 993590655 |
+| 交流群 2 | 907481113 |
+
+---
+
+## 💖 支持
+
+- ⭐ GitHub Star
+- 📺 B站关注点赞
+- 💬 加群交流
+- 🐛 反馈建议
+
+---
+
+## 🙏 致谢
+
+**贡献者：** Crazyone、东见云、祥子、SiChun Yuan、动画大白、哈库呐玛哒哒、z.ven 子墨、一方狂三
+
+**开源项目：** FFmpeg、gifsicle
+
+---
+
+**Since 2019.11** | Copyright © 2019 Bullet.S

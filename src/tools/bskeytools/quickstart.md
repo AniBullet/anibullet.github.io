@@ -1,6 +1,6 @@
 ---
 title: 快速入门
-icon: rocket
+icon: launch
 order: 1
 category:
   - BsKeyTools
@@ -37,11 +37,7 @@ tag:
 
 `菜单栏` → `BsKeyTools` → `BulletKeyTools`
 
-### 方式二：快捷键
-
-安装后默认绑定快捷键 `Alt + Z`
-
-### 方式三：工具栏
+### 方式二：工具栏
 
 右键工具栏空白处 → 勾选 `BsKeyTools`
 

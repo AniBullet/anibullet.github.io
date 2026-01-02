@@ -6,118 +6,233 @@ category:
   - 使用指南
 ---
 
-## 常见问题
+# 常见问题 FAQ
 
-### 1. 为什么安装后打开工具，看不到面板也没有报错？
+遇到问题？在这里找找答案。
+
+---
+
+## 🚀 安装相关
+
+### 安装后看不到工具面板？
+
+::: details 点击查看解决方案
+
+**步骤 1：确认重启**
+
+安装后必须重启 3ds Max。
+
+**步骤 2：检查窗口位置**
+
+多屏幕用户可能遇到窗口在屏幕外的问题。
+
+解决方法：菜单栏 → `BsKeyTools` → `工具窗口位置重置`
+
+![位置重置](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/20221218033444.png)
+
+**步骤 3：手动运行脚本**
+
+菜单栏 → `MAXScript` → `运行脚本` → 选择 `BulletKeyTools.ms`
+
+:::
+
+---
+
+### 卸载后工具还在？
+
+::: details 点击查看解决方案
+
+可能是卸载不完整，请手动删除以下文件/文件夹：
+
+| 路径 | 说明 |
+|:-----|:-----|
+| `*/Scripts/_BsKeyTools/` | 主要脚本文件夹 |
+| `*/Scripts/Startup/BulletKeyTools.ms` | 启动脚本 |
+| `*/UI_ln/Icons/cstoolIcons/` | 图标文件夹 |
+
+> `*` 代表 3ds Max 安装根目录
+
+:::
+
+---
+
+### 安装程序找不到 Max 路径？
+
+::: details 点击查看解决方案
+
+可能的原因：
+- 3ds Max 非标准安装
+- 注册表信息缺失
+
+**解决方法：** 使用手动安装方式，参见 [安装指南](/guide/)
+
+:::
+
+---
+
+## ⚙️ 使用相关
+
+### 怎么删除/备份配置文件？
+
+::: details 点击查看解决方案
+
+**方法 1：通过工具**
+
+右键工具面板 → 点击设置 → 打开"配置文件"目录
+
+**方法 2：直接访问路径**
+
+```
+%localappdata%\Autodesk\3dsMax\{版本号}\ENU\BulletConfig.ini
+```
+
+配置文件：`BulletConfig.ini`
+
+:::
+
+---
+
+### 帧栏范围不实时更新？
+
+::: details 点击查看解决方案
+
+可能是杀毒工具禁用了回调函数（如 Max 杀毒卫士）。
+
+**解决步骤：**
+
+1. 点击主面板右下方 **插件管理**
+2. 找到杀毒相关插件
+3. 启用回调功能
+
+![设置1](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled.png)
+
+![设置2](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled_1.png)
+
+:::
+
+---
+
+### 切换语言后设置丢失？
+
+::: details 点击查看解决方案
+
+配置文件与语言版本相关，存放在不同目录。
+
+**解决方法：** 复制配置文件到新语言目录
+
+```
+从：%localappdata%\Autodesk\3dsMax\{版本}\ENU\BulletConfig.ini
+到：%localappdata%\Autodesk\3dsMax\{版本}\CHS\BulletConfig.ini
+```
+
+:::
+
+---
+
+## ❌ 报错相关
+
+### 报错 `dotNet runtime exception ... gitee.com`
+
+::: details 点击查看解决方案
+
+**原因：** 网络问题导致无法检测更新
+
+**影响：** 工具使用无影响
+
+**解决方法：**
+1. 在设置中关闭"检查更新"，离线使用
+2. 或检查网络，确认能访问 [gitee.com](https://gitee.com)
+
+:::
+
+---
+
+### Max 安全工具报错阻止运行
+
+::: details 点击查看解决方案
+
+高版本 3ds Max 自带的安全工具可能阻止 dotNet 接口。
+
+![报错1](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-46-04.png)
+
+**解决步骤：**
+
+1. 打开 3ds Max 安全设置
+2. 关闭对 **dotNet 接口** 的阻拦
+3. 重启 3ds Max
+
+![设置1](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-20.png)
+
+![设置2](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-44.png)
 
 ::: tip
-
-首先确认重启了Max，或者你知道该怎么运行该工具脚本ms
-
-重启Max后还没有，可能是多屏导致界面位置在屏幕外，
-
-（0.9.6版本后做了初次打开位置保护）
-
-可在菜单栏点击    ``工具窗口  位置重置``
-
-![img01](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/20221218033444.png)
+BsKeyTools 自带病毒防护功能，可以安全关闭官方安全工具
+:::
 
 :::
 
-### 2. 为什么这个卸载以后每次打开还是会有啊？
+---
+
+### 打开工具报错，没有显示主界面
+
+::: details 点击查看解决方案
+
+![报错图](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-06-08_03-44-30.png)
+
+**解决步骤：**
+
+1. 关闭所有 3ds Max
+2. 打开路径：
+   ```
+   %localappdata%\Autodesk\3dsMax\{版本}\ENU\
+   ```
+3. 将 `BulletConfig.ini` 移动到其他位置（备份）
+4. 重启 3ds Max，重新打开工具
 
 ::: tip
-
-可能是卸载不干净，请手动删除3dsMax 安装根目录下的：
-
-``*/Scripts/BulletScripts`` 文件夹
-
-``*/Scripts/Startup/BulletKeyTools.ms`` 文件
-
-``*/UI_ln\Icons\cstoolIcons`` 文件夹
+0.9.9.7 版本后会提示出错的脚本名，方便定位问题
+:::
 
 :::
 
-### 3.  怎么删除(备份)配置文件？
+---
+
+## 💬 其他问题
+
+### 工具会收费吗？
+
+::: info
+**不会！** BsKeyTools 完全开源免费，仅供学习参考，请勿商用。
+:::
+
+---
+
+### 如何反馈 Bug 或建议？
+
+::: tip 反馈渠道
+
+| 渠道 | 链接 |
+|:-----|:-----|
+| GitHub Issues | [提交 Issue](https://github.com/AniBullet/BsKeyTools/issues) |
+| QQ 交流群 1 | [993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu) |
+| QQ 交流群 2 | [907481113](https://qm.qq.com/q/FZ2gBKJeYE) |
+| B 站私信 | [@Bullet_S](https://space.bilibili.com/2031113) |
+
+:::
+
+---
+
+### 如何参与贡献？
 
 ::: tip
-
-右键工具面板或者点击设置，点击打开“配置文件"目录，``BulletConfig.ini`` 即配置文件
-
-或者直接打开路径：``%localappdata%\Autodesk\3dsMax\{max版本号}\ENU{语言}\``
-
+欢迎参与贡献！请查看 [GitHub 仓库](https://github.com/AniBullet/BsKeyTools) 的 CONTRIBUTING.md
 :::
 
-### 4. 为什么帧栏范围不实时改变？
+---
 
-::: tip
+## 🔍 找不到答案？
 
-可能因为杀毒工具禁用了回调，如max杀毒卫士，请点开主面板右下方“插件管理”，并按下图操作:
-![img02](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled.png)
-![img03](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Untitled_1.png)
+加入 QQ 交流群获取帮助：
 
-:::
-
-### 5. 为什么切换语言版本后脚本设置没了
-
-::: tip
-
-因为配置文件放在跟语言版本相关的目录，
-
-为啥不放通用地方呢，~~因为权限原因无奈之举...~~ 分开配置更灵活~
-
-可以复制对应语言版本下配置文件到新的目录：
-
-``%localappdata%\Autodesk\3dsMax\{max版本号}\ENU{语言}\BulletConfig.ini``
-
-当然，我觉得还不如重新点几下快= =
-
-:::
-
-### 6. 运行报错 ``dotNet runtime exception ...... gitee.com``
-
-::: tip
-
-可能因为网络原因，无法检测最新版本，
-
-工具使用无影响，可在设置中关闭检查更新，离线使用。
-
-当然还是建议自动检测更新，因为真的很方便~
-
-可以尝试检查网络 ( 看能否登陆码云 [gitee.com](http://gitee.com) ) 或者重装插件。
-
-:::
-
-### 7. 可能打开工具失败，弹出 Max 安全工具的报错 (如不是请忽略这条)
-
-::: tip
-
-因为高版本3dsmax自带的安全工具会阻隔dotnet接口，直接禁了 System.IO.File，所以工具打开失败，建议关闭自带安全工具，或者取消拦截dotnet接口。（本工具自带杀毒功能）  
-![img04](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-46-04.png)  
-
-![img05](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-20.png)
-![img06](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-05-13_19-47-44.png)  
-
-建议:  
-1. 关闭对 dotnet 接口的阻拦  
-2. 重启 3dsmax  
-
-:::
-
-### 8. 打开工具报错，并且没有显示工具主界面
-
-::: tip 
-
-![img07](https://cdn.jsdelivr.net/gh/AniBullet/Blog-cdn@master/images/Snipaste_2023-06-08_03-44-30.png)
-
-
-
-可尝试暂时移除配置文件:  
-1. 首先关闭所有 3dsMax
-2. 资源管理器粘贴下面路径, ``%localappdata%\Autodesk\3dsMax\2014 - 64bit\ENU`` 找到 BulletConfig.ini
-3. 移动到其他文件夹，方便恢复部分设置
-4. 重启 3dsMax，打开插件
-
-ps：0.9.9.7 之后版本添加了报错提示出错脚本名，略微方便定位问题
-
-:::
+- **群 1：** [993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu)
+- **群 2：** [907481113](https://qm.qq.com/q/FZ2gBKJeYE)

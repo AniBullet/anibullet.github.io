@@ -5,13 +5,13 @@ icon: info
 
 # 关于 Bullet.S
 
-**Animator & Technical Artist**
+**Animation Technical Artist**
 
 ---
 
 ## 👤 简介
 
-游戏动画师，业余开发 3ds Max 动画工具。
+动画 TA，主攻角色 3C 方向。曾任游戏动画师，业余开发 3ds Max 动画工具。
 
 **BsKeyTools** 从 2019 年开始开发，旨在提高动画师工作效率。
 

@@ -11,15 +11,25 @@ tag:
 
 # 安装指南
 
-BsKeyTools 支持自动安装和手动安装两种方式。
+---
+
+## 📥 下载
+
+| 下载源 | 链接 | 说明 |
+|:-------|:-----|:-----|
+| **GitHub** | [Releases](https://github.com/AniBullet/BsKeyTools/releases/latest) | 推荐，最新版本 |
+| 蓝奏云 | [点击下载](https://anibullet.lanzoue.com/b07cmnqta) | 密码：2333 |
+| 阿里云盘 | [点击下载](https://www.alipan.com/s/tFUkG2D9Z9J) | 无密码 |
+| 夸克网盘 | [点击下载](https://pan.quark.cn/s/4a0d183b53c5) | 密码：x8Ee |
+| 百度网盘 | [点击下载](https://pan.baidu.com/s/1WZLgXLid_ga9N-RNPI4N4Q?pwd=2333) | 提取码：2333 |
 
 ---
 
 ## 🤖 自动安装（推荐）
 
-1. 前往 [GitHub Releases](https://github.com/AniBullet/BsKeyTools/releases/latest) 下载最新版本
-2. 解压后运行 `_BsKeyTools.exe`
-3. 在安装界面选择安装模式：
+1. 下载并解压工具包
+2. 运行 `_BsKeyTools.exe`
+3. 选择安装模式：
    - **自动检测**：自动识别已安装的 3ds Max 版本
    - **手动选择**：手动指定 3ds Max 安装路径
 4. 勾选要安装的版本，点击 **安装**
@@ -30,6 +40,20 @@ BsKeyTools 支持自动安装和手动安装两种方式。
 ::: warning 注意
 - 安装前请关闭 3ds Max
 - 如有杀毒软件拦截，请添加信任
+:::
+
+---
+
+## 🚀 启动工具
+
+安装完成并重启 3ds Max 后：
+
+**菜单栏** → `BsKeyTools` → `🌟 BsKeyTools`
+
+::: tip 添加工具栏按钮
+菜单栏 → `BsKeyTools` → `+菜单栏按钮-` → `添加工具栏按钮`
+
+添加后在主工具栏会出现一个蓝底白字 **S** 图标
 :::
 
 ---

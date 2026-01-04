@@ -8,8 +8,6 @@ category:
 
 # 下载安装
 
-## BsKeyTools
-
 <div align="center">
 
 **All for Animator** - 专为 3ds Max 动画师打造的综合工具集
@@ -22,10 +20,6 @@ category:
 
 ## 📥 下载地址
 
-::: tip 推荐下载
-建议从 GitHub 下载最新版本，保持工具更新
-:::
-
 | 下载源 | 链接 | 说明 |
 |:-------|:-----|:-----|
 | **GitHub** | [![Latest Release](https://img.shields.io/github/v/release/AniBullet/BsKeyTools?display_name=tag&include_prereleases&sort=semver)](https://github.com/AniBullet/BsKeyTools/releases/latest) | 推荐，最新版本 |
@@ -36,38 +30,17 @@ category:
 
 ---
 
-## 🔧 安装方式
+## 🔧 快速安装
 
-### 方式一：自动安装（推荐）
+1. 下载并解压工具包
+2. 运行 `_BsKeyTools.exe`
+3. 选择 3ds Max 版本，点击安装
+4. 重启 3ds Max
+5. 菜单栏 → `BsKeyTools` → `🌟 BsKeyTools`
 
-1. 下载最新版本安装包
-2. 解压后运行 `_BsKeyTools.exe`
-3. 选择你的 3ds Max 版本
-4. 点击 **安装** 按钮
-5. 重启 3ds Max
-
-![自动安装](https://raw.githubusercontent.com/AniBullet/BsKeyTools/main/SetupPrev.gif)
-
-::: warning 注意事项
-- 安装前请 **关闭 3ds Max**
-- 如提示找不到安装路径，可能是 3ds Max 安装不完整
-- 如被杀毒软件拦截，请添加信任或临时关闭
+::: tip 详细说明
+自动/手动安装、更新、卸载等详细说明请查看 [安装指南](/tools/bskeytools/install)
 :::
-
-### 方式二：手动安装
-
-如果自动安装失败，可以手动安装，详见 [安装指南](/tools/bskeytools/install)
-
----
-
-## 🚀 启动工具
-
-安装完成后，可通过以下方式启动：
-
-| 方式 | 操作 |
-|:-----|:-----|
-| **菜单栏** | `BsKeyTools` → `BulletKeyTools` |
-| **工具栏** | 右键工具栏空白处 → 勾选 `BsKeyTools` |
 
 ---
 
@@ -82,12 +55,12 @@ category:
 
 ## 📺 视频教程
 
-完整的安装和使用教程：
-
 👉 [B站视频教程合集](https://space.bilibili.com/2031113/lists/560782)
 
 ---
 
-## ❓ 安装问题
+## ❓ 遇到问题？
 
-遇到安装问题？请查看 [常见问题](/faq) 或加入 [QQ交流群](https://jq.qq.com/?_wv=1027&k=hmeHhTwu) 获取帮助。
+- 查看 [安装指南](/tools/bskeytools/install) 了解详细安装步骤
+- 查看 [常见问题](/faq) 获取更多帮助
+- 加入 [QQ交流群 993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu) 获取帮助

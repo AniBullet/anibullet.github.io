@@ -46,11 +46,12 @@ category:
 
 | 路径 | 说明 |
 |:-----|:-----|
-| `*/Scripts/_BsKeyTools/` | 主要脚本文件夹 |
-| `*/Scripts/Startup/BulletKeyTools.ms` | 启动脚本 |
-| `*/UI_ln/Icons/cstoolIcons/` | 图标文件夹 |
+| `{3dsMax}\Scripts\BulletScripts\` | 主要脚本文件夹 |
+| `{3dsMax}\Scripts\Startup\BulletKeyTools.ms` | 启动脚本 |
+| `{3dsMax}\UI_ln\Icons\cstoolIcons\` | 图标文件夹 |
+| `{3dsMax}\plugins\GhostTrails*.dlm` | 残影插件 |
 
-> `*` 代表 3ds Max 安装根目录
+> `{3dsMax}` 代表 3ds Max 安装根目录
 
 :::
 
@@ -65,6 +66,22 @@ category:
 - 注册表信息缺失
 
 **解决方法：** 使用手动安装方式，参见 [安装指南](/guide/)
+
+:::
+
+---
+
+### 菜单栏没有 BsKeyTools？
+
+::: details 点击查看解决方案
+
+可能是 3ds Max 曾感染病毒，导致脚本自启加载功能被关闭。
+
+**修复步骤：**
+
+1. 下载 [FixLoadScripts.ms](https://github.com/AniBullet/BsKeyTools/blob/main/FixLoadScripts.ms) 脚本
+2. 将脚本拖入 3ds Max 窗口运行
+3. 重启 3ds Max
 
 :::
 

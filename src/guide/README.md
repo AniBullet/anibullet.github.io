@@ -56,17 +56,7 @@ category:
 
 ### 方式二：手动安装
 
-如果自动安装失败，可以手动安装：
-
-1. 下载并解压工具包
-2. 将 `_BsKeyTools` 文件夹复制到：
-
-```
-C:\Users\<用户名>\AppData\Local\Autodesk\3dsMax\<版本>\ENU\scripts\
-```
-
-3. 启动 3ds Max
-4. 菜单栏：`MAXScript` → `运行脚本` → 选择 `BulletKeyTools.ms`
+如果自动安装失败，可以手动安装，详见 [安装指南](/tools/bskeytools/install)
 
 ---
 

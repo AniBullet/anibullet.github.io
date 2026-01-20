@@ -75,13 +75,21 @@ category:
 
 ::: details 点击查看解决方案
 
-可能是 3ds Max 曾感染病毒，导致脚本自启加载功能被关闭。
+**原因：** 3ds Max 曾感染病毒，导致脚本自启加载功能（Load Startup Scripts）被关闭。
 
-**修复步骤：**
+**方法一：使用修复脚本（推荐）**
 
-1. 下载 [FixLoadScripts.ms](https://github.com/AniBullet/BsKeyTools/blob/main/FixLoadScripts.ms) 脚本
-2. 将脚本拖入 3ds Max 窗口运行
-3. 重启 3ds Max
+1. 右键保存 [FixLoadScripts.ms](https://github.com/AniBullet/BsKeyTools/raw/main/FixLoadScripts.ms) 到本地
+2. 将脚本文件拖入 3ds Max 窗口运行
+3. 提示修复成功后，重启 3ds Max
+
+**方法二：手动设置**
+
+1. 打开 3ds Max
+2. 菜单栏 → `自定义` → `首选项`
+3. 切换到 `MAXScript` 选项卡
+4. 勾选 `Load Startup Scripts`
+5. 点击确定，重启 3ds Max
 
 :::
 

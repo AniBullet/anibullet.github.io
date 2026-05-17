@@ -13,7 +13,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "AniBullet/anibullet.github.io",
+  repo: "AniBullet/BsKeyTools",
 
   docsDir: "src",
 

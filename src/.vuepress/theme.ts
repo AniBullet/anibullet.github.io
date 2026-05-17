@@ -171,9 +171,9 @@ export default hopeTheme({
     },
 
     docsearch: {
-      appId: 'YWKX4THIK4',
-      apiKey: '9c1e476f9456f16383975eff8d2b4d67',
-      indexName: 'anibullet_github_io_ywkx4thik4_pages',
+      appId: 'Q4Q5T7LLTS',
+      apiKey: 'b527c3a8070729cf86856b992680c365',
+      indexName: 'aniBullet docs',
       locales: {
         '/': {
           placeholder: '搜索',

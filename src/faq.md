@@ -1,7 +1,8 @@
----
+﻿---
 title: 常见问题
 index: false
-icon: ask
+icon: circle-question
+description: 收集整理 BsKeyTools 使用中的常见问题与解决方案
 category:
   - 使用指南
 ---
@@ -12,7 +13,7 @@ category:
 
 ---
 
-## 🚀 安装相关
+## 安装相关
 
 ### 安装后看不到工具面板？
 
@@ -95,7 +96,7 @@ category:
 
 ---
 
-## ⚙️ 使用相关
+## 使用相关
 
 ### 怎么删除/备份配置文件？
 
@@ -154,7 +155,7 @@ category:
 
 ---
 
-## ❌ 报错相关
+## 报错相关
 
 ### 报错 `dotNet runtime exception ... gitee.com`
 
@@ -222,7 +223,7 @@ BsKeyTools 自带病毒防护功能，可以安全关闭官方安全工具
 
 ---
 
-## 💬 其他问题
+## 其他问题
 
 ### 工具会收费吗？
 
@@ -255,9 +256,10 @@ BsKeyTools 自带病毒防护功能，可以安全关闭官方安全工具
 
 ---
 
-## 🔍 找不到答案？
+## 找不到答案？
 
 加入 QQ 交流群获取帮助：
 
 - **群 1：** [993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu)
 - **群 2：** [907481113](https://qm.qq.com/q/FZ2gBKJeYE)
+

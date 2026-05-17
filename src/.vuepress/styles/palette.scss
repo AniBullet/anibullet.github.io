@@ -1,2 +1,105 @@
-// you can change colors here
-$theme-color: #66BAB7;
+// =============================================================================
+//  aniBullet Docs — palette overrides (Theme Hope v2.x)
+//  src/.vuepress/styles/palette.scss
+//
+//  Theme Hope v2 maps every $vp-c-* SCSS variable (light/dark pair) into a
+//  --vp-c-* CSS variable at runtime. Override these once and every page —
+//  hero, sidebar, feature cards, callouts, badges, code, links — picks up
+//  the same accent automatically.
+//
+//  Refs:
+//    https://theme-hope.vuejs.press/config/style
+// =============================================================================
+
+
+// ── Brand accent (used for links, active sidebar, primary button, etc.) ─────
+$vp-c-accent: (
+  light: #4FA5A2,            // a touch darker for AA contrast on light bg
+  dark:  #66BAB7,
+);
+$vp-c-accent-bg: (
+  light: #66BAB7,
+  dark:  #66BAB7,
+);
+$vp-c-accent-hover: (
+  light: #4FA5A2,
+  dark:  #7BCCC9,
+);
+$vp-c-accent-text: (
+  light: #FFFFFF,             // text color on solid accent bg
+  dark:  #0A1418,
+);
+$vp-c-accent-soft: (
+  light: rgba(102, 186, 183, .14),
+  dark:  rgba(102, 186, 183, .18),
+);
+
+
+// ── Surfaces ────────────────────────────────────────────────────────────────
+$vp-c-bg: (
+  light: #F4F6F8,
+  dark:  #0B141B,
+);
+$vp-c-bg-alt: (
+  light: #ECEFF3,
+  dark:  #0F1A22,
+);
+$vp-c-bg-elv: (
+  light: #FFFFFF,
+  dark:  #15212B,
+);
+
+
+// ── Text ────────────────────────────────────────────────────────────────────
+$vp-c-text: (
+  light: #16242F,
+  dark:  #E8EEF3,
+);
+$vp-c-text-mute: (
+  light: rgb(22 36 47 / 70%),
+  dark:  rgb(232 238 243 / 70%),
+);
+$vp-c-text-subtle: (
+  light: rgb(22 36 47 / 50%),
+  dark:  rgb(232 238 243 / 50%),
+);
+
+
+// ── Borders & dividers ──────────────────────────────────────────────────────
+$vp-c-border: (
+  light: rgb(15 30 45 / 14%),
+  dark:  rgb(255 255 255 / 12%),
+);
+$vp-c-divider: (
+  light: rgb(15 30 45 / 8%),
+  dark:  rgb(255 255 255 / 6%),
+);
+
+
+// ── Shadow ──────────────────────────────────────────────────────────────────
+$vp-c-shadow: (
+  light: rgb(15 30 45 / 12%),
+  dark:  rgb(0 0 0 / 50%),
+);
+
+
+// ── Controls (chips, inputs, hover bg) ──────────────────────────────────────
+$vp-c-control: (
+  light: rgb(142 150 170 / 10%),
+  dark:  rgb(101 117 133 / 14%),
+);
+$vp-c-control-hover: (
+  light: rgb(142 150 170 / 18%),
+  dark:  rgb(101 117 133 / 22%),
+);
+
+
+// ── Code block background (shiki theme) ─────────────────────────────────────
+$code-bg-color: (
+  light: #ECEFF3,
+  dark:  #0F1A22,
+);
+$code-color: (
+  light: #16242F,
+  dark:  #E8EEF3,
+);

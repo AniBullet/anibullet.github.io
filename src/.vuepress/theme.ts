@@ -17,7 +17,7 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Category", "Tag", "ReadingTime"],
 
   // 导航栏
   navbar,
@@ -26,7 +26,18 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: 'Copyright © 2022 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a><br>Powered by <a href="https://v2.vuepress.vuejs.org/zh/"> Vuepress</a> Theme <a href="https://theme-hope.vuejs.press/">Hope</a>',
+  footer: `
+    <p class="ani-footer-tagline">
+      <span class="ani-footer-mark"></span>
+      献给每一个热爱&nbsp;K&nbsp;帧的动画人
+      <span class="ani-footer-mark"></span>
+    </p>
+    <p class="ani-footer-meta">
+      © Since 2019 by <a href="https://www.anibullet.com/"> ⭐ Bullet.S</a>
+      &nbsp;·&nbsp; Powered by <a href="https://v2.vuepress.vuejs.org/zh/">VuePress</a>
+      Theme <a href="https://theme-hope.vuejs.press/">Hope</a>
+    </p>
+  `,
   displayFooter: true,
 
   copyright: false,
@@ -123,6 +134,10 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
+    icon: {
+      assets: "fontawesome",
+    },
+
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     // comment: {
     //   provider: "Giscus",
@@ -208,9 +223,10 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
-    icon: {
-      prefix: "/logo.png",
-    },
+    // icon: {
+    //   prefix: "/logo.png",
+    // },
+
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     pwa: {

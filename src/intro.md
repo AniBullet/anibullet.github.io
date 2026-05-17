@@ -1,6 +1,7 @@
----
+﻿---
 title: 关于
-icon: info
+icon: circle-info
+description: 3ds Max 动画技术美术，BsKeyTools 开源工具集作者
 ---
 
 # 关于 Bullet.S
@@ -9,7 +10,7 @@ icon: info
 
 ---
 
-## 👤 简介
+## 简介
 
 动画 TA，主攻角色 3C 方向。曾任游戏动画师，业余开发 3ds Max 动画工具。
 
@@ -17,7 +18,7 @@ icon: info
 
 ---
 
-## 🛠️ 项目
+## 项目
 
 **BsKeyTools** - 专为 3ds Max 动画师打造的综合工具集
 
@@ -28,7 +29,7 @@ icon: info
 
 ---
 
-## 🔗 联系方式
+## 联系方式
 
 | 平台 | 链接 |
 |:-----|:-----|
@@ -39,7 +40,7 @@ icon: info
 
 ---
 
-## 💬 交流群
+## 交流群
 
 | 群名 | 群号 |
 |:-----|:-----|
@@ -48,16 +49,16 @@ icon: info
 
 ---
 
-## 💖 支持
+## 支持
 
-- ⭐ GitHub Star
-- 📺 B站关注点赞
-- 💬 加群交流
-- 🐛 反馈建议
+-  GitHub Star
+-  B站关注点赞
+-  加群交流
+-  反馈建议
 
 ---
 
-## 🙏 致谢
+## 致谢
 
 **贡献者：** Crazyone、东见云、祥子、SiChun Yuan、动画大白、哈库呐玛哒哒、z.ven 子墨、一方狂三
 
@@ -65,4 +66,5 @@ icon: info
 
 ---
 
-**Since 2019.11** | Copyright © 2019 Bullet.S
+**Since 2019.11** | Copyright  2019 Bullet.S
+

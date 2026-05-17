@@ -4,44 +4,44 @@ import { sidebar } from "vuepress-theme-hope";
 const commonSidebar = [
   {
     text: "快速开始",
-    icon: "creative",
+    icon: "lightbulb",
     collapsible: false,
     children: [
       {
         text: "下载安装",
-        icon: "install",
+        icon: "download",
         link: "/guide/",
       },
       {
         text: "常见问题",
-        icon: "ask",
+        icon: "circle-question",
         link: "/faq",
       },
       {
         text: "关于作者",
-        icon: "info",
+        icon: "circle-info",
         link: "/intro",
       },
     ],
   },
   {
     text: "BsKeyTools",
-    icon: "tool",
+    icon: "wrench",
     collapsible: false,
     children: [
       {
         text: "工具首页",
-        icon: "home",
+        icon: "house",
         link: "/tools/bskeytools/",
       },
       {
         text: "快速入门",
-        icon: "launch",
+        icon: "rocket",
         link: "/tools/bskeytools/quickstart",
       },
       {
         text: "安装指南",
-        icon: "install",
+        icon: "download",
         link: "/tools/bskeytools/install",
       },
       {
@@ -53,17 +53,17 @@ const commonSidebar = [
   },
   {
     text: "工具详解",
-    icon: "module",
+    icon: "cubes",
     collapsible: true,
     children: [
       {
         text: "动画工具",
-        icon: "animation",
+        icon: "film",
         link: "/tools/bskeytools/animation",
       },
       {
         text: "骨骼绑定",
-        icon: "tree",
+        icon: "sitemap",
         link: "/tools/bskeytools/rigging",
       },
       {
@@ -83,19 +83,19 @@ const commonSidebar = [
       },
       {
         text: "动画重定向",
-        icon: "change",
+        icon: "right-left",
         link: "/tools/bskeytools/retarget",
       },
     ],
   },
   {
     text: "插件扩展",
-    icon: "plugin",
+    icon: "puzzle-piece",
     collapsible: true,
     children: [
       {
         text: "独立插件",
-        icon: "plugin",
+        icon: "puzzle-piece",
         link: "/tools/bskeytools/plugins",
       },
       {

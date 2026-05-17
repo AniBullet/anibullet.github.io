@@ -1,7 +1,8 @@
----
+﻿---
 title: 快速入门
-icon: launch
+icon: rocket
 order: 1
+description: 5 分钟上手 BsKeyTools，界面概览与核心功能速查
 category:
   - BsKeyTools
 tag:
@@ -15,7 +16,7 @@ tag:
 
 ---
 
-## 🎛️ 界面概览
+## 界面概览
 
 ![界面预览](https://raw.githubusercontent.com/AniBullet/BsKeyTools/main/BsKeyToolsPrev.gif)
 
@@ -29,7 +30,7 @@ tag:
 
 ---
 
-## ⚡ 常用功能速查
+## 常用功能速查
 
 ### 关键帧操作
 
@@ -64,7 +65,7 @@ tag:
 
 ---
 
-## 🔧 扩展面板
+## 扩展面板
 
 点击主面板底部的页签按钮，可切换 4 个扩展面板（共 48 个工具按钮）。
 
@@ -74,16 +75,17 @@ tag:
 
 ---
 
-## 📺 视频教程
+## 视频教程
 
 更详细的使用教程请观看 B 站视频系列：
 
-👉 [BsKeyTools 视频教程合集](https://space.bilibili.com/2031113/lists/560782)
+[BsKeyTools 视频教程合集](https://space.bilibili.com/2031113/lists/560782)
 
 ---
 
-## ❓ 遇到问题？
+## 遇到问题？
 
 - 查看 [安装指南](install.md) 解决安装问题
 - 查看 [常见问题](/faq) 获取更多帮助
 - 加入 [QQ 交流群 993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu) 获取帮助
+

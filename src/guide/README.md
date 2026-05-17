@@ -1,7 +1,8 @@
----
+﻿---
 title: 下载安装
 index: false
-icon: creative
+icon: download
+description: BsKeyTools 下载地址汇总与安装步骤，支持自动安装脚本与手动部署两种方式
 category:
   - 使用指南
 ---
@@ -18,7 +19,7 @@ category:
 
 ---
 
-## 📥 下载地址
+## 下载地址
 
 | 下载源 | 链接 | 说明 |
 |:-------|:-----|:-----|
@@ -30,13 +31,13 @@ category:
 
 ---
 
-## 🔧 快速安装
+## 快速安装
 
 1. 下载并解压工具包
 2. 运行 `_BsKeyTools.exe`
 3. 选择 3ds Max 版本，点击安装
 4. 重启 3ds Max
-5. 菜单栏 → `BsKeyTools` → `🌟 BsKeyTools`
+5. 菜单栏 → `BsKeyTools` → ` BsKeyTools`
 
 ::: tip 详细说明
 自动/手动安装、更新、卸载等详细说明请查看 [安装指南](/tools/bskeytools/install)
@@ -44,7 +45,7 @@ category:
 
 ---
 
-## 🎯 版本支持
+## 版本支持
 
 | 3ds Max 版本 | 支持状态 |
 |:-------------|:---------|
@@ -53,14 +54,15 @@ category:
 
 ---
 
-## 📺 视频教程
+## 视频教程
 
-👉 [B站视频教程合集](https://space.bilibili.com/2031113/lists/560782)
+[B站视频教程合集](https://space.bilibili.com/2031113/lists/560782)
 
 ---
 
-## ❓ 遇到问题？
+## 遇到问题？
 
 - 查看 [安装指南](/tools/bskeytools/install) 了解详细安装步骤
 - 查看 [常见问题](/faq) 获取更多帮助
 - 加入 [QQ交流群 993590655](https://jq.qq.com/?_wv=1027&k=hmeHhTwu) 获取帮助
+

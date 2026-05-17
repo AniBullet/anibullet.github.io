@@ -1,4 +1,4 @@
----
+﻿---
 title: 幻灯片页
 icon: person-chalkboard
 layout: Slides
@@ -26,7 +26,7 @@ layout: Slides
 
 <!-- .element: class="r-fit-text" -->
 
-[👇](#/1/1)
+[](#/1/1)
 
 --
 
@@ -130,7 +130,7 @@ $$
 
 你可以在幻灯片中使用 Markdown 语法的各种标记.
 
-⚠**请注意**: 表格和分割线，以及所有不在 Markdown 标准语法中的内容均不受支持。
+**请注意**: 表格和分割线，以及所有不在 Markdown 标准语法中的内容均不受支持。
 
 ---
 
@@ -148,7 +148,7 @@ $$
 
 <!-- .element: class="r-fit-text" -->
 
-👆 `r-fit-text` class 会让文字在不超出幻灯片范围的情况下尽可能大。
+ `r-fit-text` class 会让文字在不超出幻灯片范围的情况下尽可能大。
 
 --
 
@@ -160,7 +160,7 @@ $$
 
 <!-- .element: class="r-stretch" -->
 
-👆 `r-stretch` class 帮助你控制注入图片或视频的大小，使它们填充满幻灯片垂直方向上的剩余空间。
+ `r-stretch` class 帮助你控制注入图片或视频的大小，使它们填充满幻灯片垂直方向上的剩余空间。
 
 --
 
@@ -427,3 +427,4 @@ c(3);
 ## 结束
 
 @slideend
+

@@ -1,7 +1,8 @@
----
+﻿---
 title: 动画重定向
-icon: change
+icon: right-left
 order: 15
+description: FBX 骨骼动画重定向到 Biped，含 Root Motion 提取与原地动画互转
 category:
   - BsKeyTools
 tag:
@@ -16,7 +17,7 @@ tag:
 
 ---
 
-## 🔄 FBX 转 CS (BsRetargetTools)
+## FBX 转 CS (BsRetargetTools)
 
 将 FBX 骨骼动画重定向到 Biped (Character Studio) 骨骼。
 
@@ -68,7 +69,7 @@ tag:
 
 ---
 
-## 🦴 Root Motion 工具 (BsRootMotionTools)
+## Root Motion 工具 (BsRootMotionTools)
 
 根骨骼运动的提取和应用工具。
 
@@ -107,7 +108,7 @@ tag:
 
 ---
 
-## 📦 批量重定向
+## 批量重定向
 
 ### 批量转换流程
 
@@ -127,7 +128,7 @@ tag:
 
 ---
 
-## 🎯 重定向技巧
+## 重定向技巧
 
 ### 提高重定向质量
 
@@ -154,6 +155,7 @@ tag:
 
 ---
 
-## 📺 视频教程
+## 视频教程
 
-👉 [动画重定向视频教程](https://space.bilibili.com/2031113/lists/560782)
+[动画重定向视频教程](https://space.bilibili.com/2031113/lists/560782)
+

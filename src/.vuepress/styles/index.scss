@@ -1,51 +1,877 @@
-// 自定义样式
+// =============================================================================
+//  aniBullet Docs — style overrides (Theme Hope v2.x)
+//  src/.vuepress/styles/index.scss
+//
+//  GOAL
+//  ────
+//  Stay out of Hope's way for color + font (those go through palette.scss /
+//  config.scss). Here we ONLY:
+//    1. publish a derived `--vp-c-accent-line` token (used for hairlines)
+//    2. round corners + add rhythm to a handful of components
+//    3. dress the hero, feature cards, sidebar, callouts, code blocks
+//
+//  Every accent reference goes through `--vp-c-accent` / `--vp-c-accent-soft`
+//  so the brand color stays consistent across every page.
+// =============================================================================
 
-// 主页内容区
-.homepage .theme-hope-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-  
-  > img {
-    display: block;
-    margin: 2rem auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-    max-width: 100%;
-  }
-  
-  > p {
-    text-align: center;
-  }
-  
-  .hint-container {
-    max-width: 600px;
-    margin: 1.5rem auto;
-  }
+/* ── self-hosted Latin fonts (中国大陆友好) ───────────────────────────────── */
+/* See FONTS.md for the 8 woff2 files to drop into public/fonts/.            */
+/* Chinese falls back to system PingFang / HarmonyOS Sans — no download.     */
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal; font-weight: 500; font-display: swap;
+  src: url("/fonts/nunito-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal; font-weight: 700; font-display: swap;
+  src: url("/fonts/nunito-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal; font-weight: 800; font-display: swap;
+  src: url("/fonts/nunito-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal; font-weight: 600; font-display: swap;
+  src: url("/fonts/jakarta-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal; font-weight: 700; font-display: swap;
+  src: url("/fonts/jakarta-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal; font-weight: 800; font-display: swap;
+  src: url("/fonts/jakarta-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal; font-weight: 500; font-display: swap;
+  src: url("/fonts/jbmono-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal; font-weight: 600; font-display: swap;
+  src: url("/fonts/jbmono-600.woff2") format("woff2");
 }
 
-// features 卡片
-.vp-features .vp-feature-item {
-  border-radius: 10px;
-  transition: all 0.25s ease;
-  
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
+/* ── derived accent line (32% alpha of the brand color, used for borders) ── */
+:root {
+  --vp-c-accent-line: rgba(102, 186, 183, .32);
+  --ani-r-sm: 10px;
+  --ani-r-md: 14px;
+  --ani-r-lg: 20px;
+  --ani-r-pill: 999px;
 }
 
-// 侧边栏链接
+/* ── headings: round, bold, tight ─────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--vp-font-heading);
+  font-weight: 800;
+  letter-spacing: -0.018em;
+}
+
+
+/* =========================================================================
+   HOMEPAGE  (home: true frontmatter)
+========================================================================= */
+
+/* Hero — 强制竖排居中（含 heroImage 时默认横排，这里改为居中列布局）*/
+.vp-hero-info-wrapper,
+.vp-blog-hero {
+  padding-top: 64px !important;
+}
+.vp-hero-info {
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 28px !important;
+}
+.vp-hero-image {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, .4));
+  max-width: 140px !important;
+  width: 140px !important;
+}
+.vp-hero-infos {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.vp-hero-title, .vp-hero-info .vp-hero-title {
+  font-family: var(--vp-font-heading);
+  font-size: clamp(48px, 7vw, 82px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  text-align: center;
+}
+/* Tagline div 用 id="main-description"，无 class */
+#main-description {
+  font-size: 17px;
+  font-weight: 600;
+  text-wrap: balance;
+  max-width: 560px;
+  margin: 14px auto 0;
+  color: var(--vp-c-text-mute);
+  text-align: center;
+}
+/* Hero 按钮行居中 */
+.vp-hero-actions {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+.vp-hero-actions .vp-hero-action {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 10px 26px !important;
+  border-radius: var(--ani-r-pill) !important;
+  font-family: var(--vp-font-heading);
+  font-weight: 800;
+  font-size: 14.5px;
+}
+.vp-hero-actions .vp-hero-action.primary {
+  box-shadow: 0 4px 18px -8px var(--vp-c-accent);
+}
+.vp-hero-actions .vp-hero-action.primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Feature cards */
+.vp-features {
+  margin-top: 48px !important;
+  background: transparent !important;     /* Hope leaves a card-like bg on the container — kill it */
+  border: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 18px !important;
+}
+@media (max-width: 1080px) {
+  .vp-features { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 640px) {
+  .vp-features { grid-template-columns: 1fr !important; }
+}
+.vp-feature, .vp-feature-item {
+  border-radius: var(--ani-r-lg) !important;
+  background: var(--vp-c-bg-elv) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+  padding: 22px !important;
+  margin: 0 !important;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.vp-feature:hover, .vp-feature-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-accent-line) !important;
+  box-shadow: 0 6px 14px -8px var(--vp-c-shadow);
+}
+.vp-feature .vp-feature-header,
+.vp-feature-item h3 {
+  font-family: var(--vp-font-heading);
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-accent);
+  margin-bottom: 6px !important;
+}
+.vp-feature .vp-feature-details,
+.vp-feature-item p {
+  font-size: 13.5px !important;
+  font-weight: 600;
+  color: var(--vp-c-text-mute) !important;
+  line-height: 1.55;
+}
+/* Feature icon (when set via frontmatter `icon:`) */
+.vp-feature-icon, .vp-feature .vp-feature-icon {
+  color: var(--vp-c-accent) !important;
+}
+
+/* The hero image at the top of README (the BsKeyTools.gif) */
+.vp-blog-hero ~ * .theme-hope-content > p > img,
+.theme-hope-content > p > img:first-child {
+  display: block;
+  margin: 32px auto;
+  border-radius: var(--ani-r-lg);
+  box-shadow: 0 30px 60px -30px var(--vp-c-shadow);
+  max-width: min(100%, 920px);
+}
+
+
+/* =========================================================================
+   NAVBAR
+========================================================================= */
+
+.vp-navbar {
+  backdrop-filter: saturate(160%) blur(14px) !important;
+  -webkit-backdrop-filter: saturate(160%) blur(14px) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.vp-site-name {
+  font-family: var(--vp-font-heading);
+  font-weight: 800;
+  letter-spacing: -0.005em;
+}
+
+/* Navbar link items get pill rounded buttons */
+.vp-navbar-links .vp-navbar-item > a,
+.vp-navbar-link {
+  border-radius: var(--ani-r-pill) !important;
+  padding: 8px 14px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  transition: color .18s ease, background .18s ease;
+}
+.vp-navbar-links .vp-navbar-item > a:hover,
+.vp-navbar-link:hover {
+  background: var(--vp-c-control-hover) !important;
+}
+.vp-navbar-link.active,
+.vp-navbar-link.is-active,
+.vp-navbar-links .vp-navbar-item > a.is-active {
+  color: var(--vp-c-accent) !important;
+  background: var(--vp-c-accent-soft) !important;
+}
+
+/* Navbar brand logo — let the PNG's own curve show, soft drop shadow */
+.vp-site-brand img,
+.vp-navbar-brand img {
+  filter: drop-shadow(0 2px 6px var(--vp-c-shadow));
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
+/* =========================================================================
+   SIDEBAR
+========================================================================= */
+
+.vp-sidebar {
+  padding-top: 16px !important;
+}
+
+.vp-sidebar-group-heading,
+.vp-sidebar-header,
+.vp-sidebar h2,
+.vp-sidebar h3 {
+  font-family: var(--vp-font-heading);
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-subtle) !important;
+  margin: 12px 12px 6px !important;
+}
+
 .vp-sidebar-link {
-  border-radius: 6px;
-  margin: 2px 6px;
-  
-  &:hover {
-    background: var(--bg-color-secondary);
-  }
+  border-radius: 10px !important;
+  margin: 2px 8px !important;
+  padding: 9px 12px !important;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  position: relative;
+  transition: background .15s ease, color .15s ease;
+}
+.vp-sidebar-link:hover {
+  background: var(--vp-c-control-hover) !important;
+}
+.vp-sidebar-link.active,
+.vp-sidebar-link.is-active {
+  color: var(--vp-c-accent) !important;
+  background: var(--vp-c-accent-soft) !important;
+}
+.vp-sidebar-link.active::before,
+.vp-sidebar-link.is-active::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 8px; bottom: 8px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--vp-c-accent);
 }
 
-// 内容区图片
-.theme-hope-content img {
-  border-radius: 8px;
+
+/* =========================================================================
+   CONTENT — headings, body, lists, links, tables, callouts, code
+========================================================================= */
+
+/* =========================================================================
+   DOC PAGE HEADER
+   实际 DOM: .vp-page-title (wrapper div) > h1 + .page-info + hr
+   .vp-page-title 是外层容器，不是 h1 本身
+========================================================================= */
+
+/* 页面标题区域 — 简洁底色，微圆角，无卡片边框
+   DOM: .vp-page-title (div) > h1 + .page-info + hr */
+.vp-page-title {
+  display: flex !important;
+  flex-direction: column !important;
+  margin: 0 0 32px !important;
+  padding: 28px 32px 20px !important;
+  background: var(--vp-c-bg-elv) !important;
+  border-radius: 6px !important;
+  border: none !important;
+  overflow: visible !important;
+}
+.vp-page-title > hr { display: none !important; }
+
+/* h1 — 标题在上 */
+.vp-page-title > h1 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  font-family: var(--vp-font-heading) !important;
+  font-size: clamp(28px, 3.8vw, 42px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.15 !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+}
+.vp-page-title > h1::before { display: none !important; }
+
+/* 图标 */
+.vp-page-title > h1 .vp-icon,
+.vp-page-title > h1 svg {
+  color: var(--vp-c-accent) !important;
+  font-size: 0.75em !important;
+  width: 0.75em !important;
+  height: 0.75em !important;
+  flex-shrink: 0 !important;
+}
+
+/* 元信息行 — 标题下方，简洁小字 */
+.vp-page-title .page-info {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 4px 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.vp-page-title .page-info > * {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  color: var(--vp-c-text-mute) !important;
+  white-space: nowrap;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+/* Breadcrumbs */
+.vp-breadcrumb {
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  color: var(--vp-c-text-subtle) !important;
+  margin-bottom: 18px !important;
+}
+.vp-breadcrumb a:hover { color: var(--vp-c-accent) !important; }
+
+
+/* H2 with green left bar */
+.theme-hope-content h2 {
+  padding-top: 8px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  border-bottom: 0 !important;
+}
+.theme-hope-content h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  border-radius: 2px;
+  background: var(--vp-c-accent);
+}
+.theme-hope-content h3 {
+  margin-top: 28px;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+/* Body */
+.theme-hope-content p {
+  font-size: 15px;
+  line-height: 1.75;
+}
+.theme-hope-content strong { font-weight: 800; }
+
+/* Inline code chip — uses the brand soft surface */
+.theme-hope-content :not(pre) > code {
+  font-family: var(--vp-font-mono);
+  font-size: 0.88em;
+  font-weight: 600;
+  color: var(--vp-c-accent) !important;
+  background: var(--vp-c-accent-soft) !important;
+  padding: 1px 7px;
+  border-radius: 6px;
+}
+
+/* Links — accent with dashed underline */
+.theme-hope-content a:not(.vp-action-link):not(.header-anchor):not(.vp-feature-item):not(.vp-feature) {
+  color: var(--vp-c-accent);
+  font-weight: 700;
+  border-bottom: 1px dashed var(--vp-c-accent-line);
+  text-decoration: none;
+  transition: border-color .15s ease;
+}
+.theme-hope-content a:not(.vp-action-link):not(.header-anchor):not(.vp-feature-item):not(.vp-feature):hover {
+  border-bottom-color: var(--vp-c-accent);
+}
+
+/* Lists with green dot bullets */
+.theme-hope-content ul:not(.task-list-container) > li {
+  list-style: none;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.75;
+}
+.theme-hope-content ul:not(.task-list-container) > li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--vp-c-accent);
+}
+
+/* Tables — rounded card with uppercase headings */
+.theme-hope-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--ani-r-md);
+  overflow: hidden;
+  font-size: 13.5px;
+}
+.theme-hope-content table th {
+  font-family: var(--vp-font-heading);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-subtle);
+  background: var(--vp-c-bg-alt);
+  text-align: left;
+  padding: 11px 16px;
+  border: 0;
+}
+.theme-hope-content table td {
+  padding: 11px 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-elv);
+}
+.theme-hope-content table tr:first-child td { border-top: 0; }
+
+/* Hint 容器 — 卡片样式，左边框色区分类型 */
+.hint-container {
+  border-radius: var(--ani-r-md) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+  background: var(--vp-c-bg-elv) !important;
+  border-left: 3px solid var(--vp-c-accent) !important;
+  padding: 14px 18px !important;
+  margin: 16px 0 !important;
+}
+.hint-container.tip     { border-left-color: var(--vp-c-accent) !important; }
+.hint-container.warning { border-left-color: #E5A24B !important; }
+.hint-container.caution,
+.hint-container.danger  { border-left-color: #E26666 !important; }
+.hint-container.info,
+.hint-container.note    { border-left-color: #6CA8F7 !important; }
+.hint-container .hint-container-title {
+  font-family: var(--vp-font-heading);
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Code blocks (shiki) */
+.theme-hope-content div[class*="language-"] {
+  border-radius: var(--ani-r-md) !important;
+  border: 1px solid var(--vp-c-divider) !important;
+}
+.theme-hope-content div[class*="language-"] pre {
+  font-family: var(--vp-font-mono) !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+/* Badge component */
+.vp-badge {
+  border-radius: var(--ani-r-pill) !important;
+  font-family: var(--vp-font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
+  padding: 3px 9px !important;
+}
+
+
+/* =========================================================================
+   FOOTER
+========================================================================= */
+
+.vp-footer-wrapper, footer.vp-footer {
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 20px 0 !important;
+}
+.vp-footer {
+  font-family: var(--vp-font-mono) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--vp-c-text-subtle) !important;
+  letter-spacing: 0.02em;
+}
+.vp-footer a {
+  color: var(--vp-c-accent) !important;
+  font-weight: 700;
+}
+
+/* Paired with theme.ts `footer:` HTML */
+.ani-footer-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+  white-space: nowrap;
+  font-family: var(--vp-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vp-c-text-subtle);
+  letter-spacing: 0.02em;
+}
+.ani-footer-mark {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: currentColor;
+  opacity: .5;
+}
+.ani-footer-meta {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--vp-c-text-subtle);
+}
+
+
+/* =========================================================================
+   MISC
+========================================================================= */
+
+::selection { background: var(--vp-c-accent-soft); color: inherit; }
+
+button { border-radius: var(--ani-r-pill); }
+
+
+/* =========================================================================
+   HOMEPAGE — custom layout via inline HTML in README.md
+   See home.md for the markup. These classes are namespaced `.ani-*` to
+   avoid colliding with Hope's built-in `.vp-*`.
+========================================================================= */
+
+/* The custom content lives directly inside the home page's content slot */
+.theme-hope-content > .ani-stats,
+.theme-hope-content > .ani-section-head,
+.theme-hope-content > .ani-features,
+.theme-hope-content > .ani-preview,
+.theme-hope-content > .ani-resources {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Stats pill — directly under hero ------------------------------------- */
+.ani-stats {
+  margin: 36px auto 0 !important;
+  width: fit-content;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 14px 12px;
+  border-radius: var(--ani-r-pill);
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-elv);
+  flex-wrap: nowrap;
+}
+.ani-stats > div {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 2px;
+  padding: 4px 24px;
+  border-right: 1px solid var(--vp-c-divider);
+}
+.ani-stats > div:last-child { border-right: 0; }
+.ani-stats b {
+  font-family: var(--vp-font-heading);
+  font-size: 16px; font-weight: 800;
+  color: var(--vp-c-text);
+  letter-spacing: -0.01em;
+}
+.ani-stats span {
+  font-size: 11.5px; font-weight: 600;
+  color: var(--vp-c-text-subtle);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Section header (kicker + title + sub) -------------------------------- */
+.ani-section-head {
+  text-align: center;
+  margin: 72px auto 32px !important;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 10px;
+}
+.ani-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 5px 14px 5px 10px;
+  border-radius: var(--ani-r-pill);
+  background: var(--vp-c-accent-soft);
+  color: var(--vp-c-accent);
+  font-weight: 700; font-size: 12px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.ani-kicker-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--vp-c-accent);
+  box-shadow: 0 0 0 3px var(--vp-c-accent-soft);
+}
+.ani-section-title {
+  font-family: var(--vp-font-heading);
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  margin: 0 !important;
+  /* Override Hope's h2 left-bar inside ani-section-head */
+}
+.ani-section-head .ani-section-title::before { display: none !important; }
+.ani-section-sub {
+  color: var(--vp-c-text-mute);
+  font-size: 15.5px;
+  max-width: 640px;
+  text-wrap: balance;
+  margin: 0 !important;
+}
+
+/* Features grid -------------------------------------------------------- */
+.ani-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+@media (max-width: 1080px) { .ani-features { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .ani-features { grid-template-columns: 1fr; } }
+
+.ani-feature {
+  position: relative;
+  display: flex; flex-direction: column;
+  gap: 12px;
+  padding: 22px;
+  border-radius: var(--ani-r-lg);
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-divider);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+.ani-feature:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-accent-line);
+  box-shadow: 0 6px 14px -8px var(--vp-c-shadow);
+  color: inherit !important;
+}
+.ani-feature-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.ani-feature-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  background: var(--vp-c-accent-soft);
+  color: var(--vp-c-accent);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.ani-feature-arrow {
+  color: var(--vp-c-text-subtle);
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 4px;
+  transition: transform .2s ease, color .2s ease;
+}
+.ani-feature:hover .ani-feature-arrow {
+  transform: translateX(3px);
+  color: var(--vp-c-accent);
+}
+.ani-feature h3 {
+  font-family: var(--vp-font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text) !important;
+  margin: 0 0 6px !important;
+  padding: 0 !important;
+  display: block !important;
+  background: none !important;
+  border: 0 !important;
+}
+.ani-feature h3::before { display: none !important; }
+.ani-feature p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--vp-c-text-mute);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Preview band --------------------------------------------------------- */
+.ani-preview {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+@media (max-width: 1080px) { .ani-preview { grid-template-columns: 1fr; } }
+
+.ani-preview-window {
+  border-radius: var(--ani-r-lg);
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-elv);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.ani-preview-titlebar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 12px 16px;
+  background: var(--vp-c-bg-alt);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.ani-preview-titlebar .dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--vp-c-border);
+}
+.ani-preview-titlebar .dot:nth-child(1) { background: #c75044; }
+.ani-preview-titlebar .dot:nth-child(2) { background: #c89723; }
+.ani-preview-titlebar .dot:nth-child(3) { background: #2d9d3a; }
+.ani-preview-title {
+  margin-left: 10px;
+  font-family: var(--vp-font-mono);
+  font-size: 12px;
+  color: var(--vp-c-text-subtle);
+}
+.ani-preview-window img {
+  display: block; width: 100%; height: auto;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.ani-bullets {
+  display: flex; flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.ani-bullets li {
+  flex: 1 1 0; min-height: 0;
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 20px !important;
+  border-radius: var(--ani-r-md);
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-elv);
+  font-weight: 600; font-size: 13.5px;
+  color: var(--vp-c-text-mute);
+  list-style: none !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ani-bullets li::before { display: none !important; }
+.ani-bullets li > svg,
+.ani-bullets li > .iconify { color: var(--vp-c-accent) !important; flex-shrink: 0; }
+.ani-bullets li b { color: var(--vp-c-text) !important; font-weight: 800; margin-right: 4px; }
+
+/* Resource cards ------------------------------------------------------- */
+.ani-resources {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+@media (max-width: 1080px) { .ani-resources { grid-template-columns: 1fr; } }
+
+.ani-resource {
+  display: flex; align-items: center; gap: 18px;
+  padding: 22px;
+  border-radius: var(--ani-r-lg);
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-divider);
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: border-color .25s ease, transform .25s ease;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+.ani-resource:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-accent-line);
+}
+.ani-resource-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border-radius: 14px;
+  background: var(--vp-c-accent-soft);
+  color: var(--vp-c-accent);
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.ani-resource > div { flex: 1; min-width: 0; }
+.ani-resource h3 {
+  font-family: var(--vp-font-heading);
+  font-size: 17px; font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text) !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
+  display: block !important;
+  background: none !important;
+  border: 0 !important;
+}
+.ani-resource h3::before { display: none !important; }
+.ani-resource p {
+  font-size: 13px; font-weight: 600;
+  color: var(--vp-c-text-mute);
+  margin: 0 0 6px;
+}
+.ani-resource code {
+  font-family: var(--vp-font-mono);
+  font-size: 11.5px;
+  color: var(--vp-c-text-subtle) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-weight: 500;
 }

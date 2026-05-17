@@ -1,2 +1,25 @@
-// you can change config here
-$code-lang: "css" "html" "js" "ts" "vue";
+// =============================================================================
+//  aniBullet Docs — sass-palette config (Theme Hope v2.x)
+//  src/.vuepress/styles/config.scss
+//
+//  These get @import'd before everything else, so $vp-font etc. become the
+//  defaults for the whole theme.
+// =============================================================================
+
+// Existing
+$code-lang: "css" "html" "js" "ts" "vue" "scss" "ms" "maxscript" "txt";
+
+// Fonts — round, friendly, slightly cute but not wobbly.
+$vp-font:
+  '"Nunito", -apple-system, BlinkMacSystemFont, "PingFang SC", '
+  '"HarmonyOS Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", '
+  '"Source Han Sans SC", "Noto Sans SC", system-ui, sans-serif';
+
+$vp-font-heading:
+  '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", '
+  '"HarmonyOS Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", '
+  '"Source Han Sans SC", "Noto Sans SC", system-ui, sans-serif';
+
+$vp-font-mono:
+  '"JetBrains Mono", ui-monospace, "SF Mono", "Menlo", "Monaco", '
+  '"Consolas", "Liberation Mono", "Courier New", monospace';

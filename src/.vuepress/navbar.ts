@@ -4,27 +4,27 @@ export default navbar([
   "/",
   {
     text: "下载安装",
-    icon: "install",
+    icon: "download",
     link: "/guide/",
   },
   {
     text: "常见问题",
-    icon: "ask",
+    icon: "circle-question",
     link: "/faq",
   },
   {
     text: "BsKeyTools",
-    icon: "tool",
+    icon: "wrench",
     prefix: "/tools/bskeytools/",
     children: [
       {
         text: "工具首页",
-        icon: "home",
+        icon: "house",
         link: "",
       },
       {
         text: "快速入门",
-        icon: "launch",
+        icon: "rocket",
         link: "quickstart",
       },
       {
@@ -34,12 +34,12 @@ export default navbar([
       },
       {
         text: "动画工具",
-        icon: "animation",
+        icon: "film",
         link: "animation",
       },
       {
         text: "骨骼绑定",
-        icon: "tree",
+        icon: "sitemap",
         link: "rigging",
       },
       {
@@ -54,14 +54,14 @@ export default navbar([
       },
       {
         text: "独立插件",
-        icon: "plugin",
+        icon: "puzzle-piece",
         link: "plugins",
       },
     ],
   },
   {
     text: "关于",
-    icon: "info",
+    icon: "circle-info",
     link: "/intro",
   },
 ]);

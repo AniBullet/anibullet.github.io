@@ -1,7 +1,8 @@
----
+﻿---
 title: 独立插件
-icon: plugin
+icon: puzzle-piece
 order: 20
+description: GhostTrails 残影 · AnimLibrary 动画库 · AnimRef 参考播放器独立插件详解
 category:
   - BsKeyTools
 tag:
@@ -17,7 +18,7 @@ BsKeyTools 包含 3 个可独立使用的插件模块。
 
 ---
 
-## 👻 GhostTrails 残影效果
+## GhostTrails 残影效果
 
 实时显示动画运动轨迹的残影效果插件。
 
@@ -29,7 +30,7 @@ GhostTrails 为 3ds Max 提供专业的残影显示功能，帮助动画师直�
 
 | 3ds Max 版本 | 支持状态 |
 |:-------------|:---------|
-| Max 9 - 2026 | ✅ 完全支持 |
+| Max 9 - 2026 |  完全支持 |
 
 ### 安装方法
 
@@ -60,7 +61,7 @@ GhostTrails 为 3ds Max 提供专业的残影显示功能，帮助动画师直�
 
 ---
 
-## 📚 AnimLibrary 动画库
+## AnimLibrary 动画库
 
 动画片段和 Pose 管理库，基于 Python 开发。
 
@@ -72,7 +73,7 @@ AnimLibrary 是一个专业的动画资产管理工具，支持保存、分类�
 
 | 3ds Max 版本 | 支持状态 |
 |:-------------|:---------|
-| Max 2020 - 2026 | ✅ 完全支持 |
+| Max 2020 - 2026 |  完全支持 |
 
 ### 主要功能
 
@@ -126,7 +127,7 @@ C:\Users\<用户名>\AppData\Local\Autodesk\3dsMax\<版本>\scripts\AnimLibrary\
 
 ---
 
-## 🎥 AnimRef 动画参考播放器
+## AnimRef 动画参考播放器
 
 在 3ds Max 视口中播放参考视频/图片序列，与时间轴同步。
 
@@ -138,7 +139,7 @@ AnimRef 让你可以在 3ds Max 内部直接播放参考视频，无需切换窗
 
 | 3ds Max 版本 | 支持状态 |
 |:-------------|:---------|
-| Max 2021 - 2026 | ✅ 完全支持 |
+| Max 2021 - 2026 |  完全支持 |
 
 ### 支持格式
 
@@ -210,7 +211,7 @@ AnimRef 集成了以下工具用于格式转换：
 
 ---
 
-## 📥 插件安装位置
+## 插件安装位置
 
 所有插件随 BsKeyTools 自动安装：
 
@@ -222,7 +223,7 @@ AnimRef 集成了以下工具用于格式转换：
 
 ---
 
-## 💡 使用技巧
+## 使用技巧
 
 ### GhostTrails
 
@@ -243,6 +244,7 @@ AnimRef 集成了以下工具用于格式转换：
 
 ---
 
-## 📺 视频教程
+## 视频教程
 
-👉 [插件使用视频教程](https://space.bilibili.com/2031113/lists/560782)
+[插件使用视频教程](https://space.bilibili.com/2031113/lists/560782)
+

@@ -1,2 +1,2 @@
-# Algolia-Crawler-Verif: C5E49F65F729D4C4
+# Algolia-Crawler-Verif: B0BF02766E3FEB29
 Sitemap: https://anibullet.github.io/sitemap.xml
